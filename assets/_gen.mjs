@@ -87,8 +87,9 @@ for(let i=0;i<70;i++){
 }
 A.push(`</g>`)
 
-// tiêu đề: pixel bay vào ghép chữ
+// tiêu đề: pixel bay vào ghép chữ, ghép xong thì chớp liên tục
 A.push(`<g transform="translate(${x0},${y0})" fill="url(#title)" filter="url(#glow)">`)
+A.push(`<animate attributeName="opacity" begin="2.2s" dur="1.05s" values="1;0.08" keyTimes="0;0.5" calcMode="discrete" repeatCount="indefinite"/>`)
 for(const p of pixels){
   const dx = Math.round((rnd()-0.5)*150)
   const dy = Math.round((rnd()-0.5)*110)

@@ -273,6 +273,7 @@
 <rect x="561" y="276" width="3" height="3"><animate attributeName="opacity" values="0.06;0.51;0.06" dur="3.01s" begin="3.93s" repeatCount="indefinite"/></rect>
 </g>
 <g transform="translate(148,94)" fill="url(#title)" filter="url(#glow)">
+<animate attributeName="opacity" begin="2.2s" dur="1.05s" values="1;0.08" keyTimes="0;0.5" calcMode="discrete" repeatCount="indefinite"/>
 <rect x="0" y="0" width="8" height="8" opacity="0" transform="translate(-7,50)">
 <animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.27s" fill="freeze"/>
 <animateTransform attributeName="transform" type="translate" values="-7 50;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.27s" fill="freeze"/>
