@@ -1,0 +1,914 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 300" width="880" height="300" font-family="ui-monospace,Menlo,Consolas,monospace" role="img" aria-label="luuvanskill">
+<defs>
+<radialGradient id="bg" cx="50%" cy="38%" r="75%"><stop offset="0" stop-color="#0e1431"/><stop offset="1" stop-color="#06080f"/></radialGradient>
+<linearGradient id="title" x1="0" y1="0" x2="1" y2="0.25">
+<stop offset="0" stop-color="#21e6ff"/><stop offset="0.34" stop-color="#4f9bff"/><stop offset="0.58" stop-color="#9d6bff"/><stop offset="0.8" stop-color="#ff4d8d"/><stop offset="1" stop-color="#ffae3d"/></linearGradient>
+<linearGradient id="shine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset="0.5" stop-color="#ffffff" stop-opacity="0.85"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
+<filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="2.1" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<mask id="tmask" maskUnits="userSpaceOnUse">
+<rect x="148" y="94" width="8" height="8" fill="#fff"/>
+<rect x="148" y="103" width="8" height="8" fill="#fff"/>
+<rect x="148" y="112" width="8" height="8" fill="#fff"/>
+<rect x="148" y="121" width="8" height="8" fill="#fff"/>
+<rect x="148" y="130" width="8" height="8" fill="#fff"/>
+<rect x="148" y="139" width="8" height="8" fill="#fff"/>
+<rect x="148" y="148" width="8" height="8" fill="#fff"/>
+<rect x="157" y="148" width="8" height="8" fill="#fff"/>
+<rect x="166" y="148" width="8" height="8" fill="#fff"/>
+<rect x="175" y="148" width="8" height="8" fill="#fff"/>
+<rect x="184" y="148" width="8" height="8" fill="#fff"/>
+<rect x="202" y="94" width="8" height="8" fill="#fff"/>
+<rect x="238" y="94" width="8" height="8" fill="#fff"/>
+<rect x="202" y="103" width="8" height="8" fill="#fff"/>
+<rect x="238" y="103" width="8" height="8" fill="#fff"/>
+<rect x="202" y="112" width="8" height="8" fill="#fff"/>
+<rect x="238" y="112" width="8" height="8" fill="#fff"/>
+<rect x="202" y="121" width="8" height="8" fill="#fff"/>
+<rect x="238" y="121" width="8" height="8" fill="#fff"/>
+<rect x="202" y="130" width="8" height="8" fill="#fff"/>
+<rect x="238" y="130" width="8" height="8" fill="#fff"/>
+<rect x="202" y="139" width="8" height="8" fill="#fff"/>
+<rect x="238" y="139" width="8" height="8" fill="#fff"/>
+<rect x="211" y="148" width="8" height="8" fill="#fff"/>
+<rect x="220" y="148" width="8" height="8" fill="#fff"/>
+<rect x="229" y="148" width="8" height="8" fill="#fff"/>
+<rect x="256" y="94" width="8" height="8" fill="#fff"/>
+<rect x="292" y="94" width="8" height="8" fill="#fff"/>
+<rect x="256" y="103" width="8" height="8" fill="#fff"/>
+<rect x="292" y="103" width="8" height="8" fill="#fff"/>
+<rect x="256" y="112" width="8" height="8" fill="#fff"/>
+<rect x="292" y="112" width="8" height="8" fill="#fff"/>
+<rect x="256" y="121" width="8" height="8" fill="#fff"/>
+<rect x="292" y="121" width="8" height="8" fill="#fff"/>
+<rect x="256" y="130" width="8" height="8" fill="#fff"/>
+<rect x="292" y="130" width="8" height="8" fill="#fff"/>
+<rect x="256" y="139" width="8" height="8" fill="#fff"/>
+<rect x="292" y="139" width="8" height="8" fill="#fff"/>
+<rect x="265" y="148" width="8" height="8" fill="#fff"/>
+<rect x="274" y="148" width="8" height="8" fill="#fff"/>
+<rect x="283" y="148" width="8" height="8" fill="#fff"/>
+<rect x="310" y="94" width="8" height="8" fill="#fff"/>
+<rect x="346" y="94" width="8" height="8" fill="#fff"/>
+<rect x="310" y="103" width="8" height="8" fill="#fff"/>
+<rect x="346" y="103" width="8" height="8" fill="#fff"/>
+<rect x="310" y="112" width="8" height="8" fill="#fff"/>
+<rect x="346" y="112" width="8" height="8" fill="#fff"/>
+<rect x="310" y="121" width="8" height="8" fill="#fff"/>
+<rect x="346" y="121" width="8" height="8" fill="#fff"/>
+<rect x="319" y="130" width="8" height="8" fill="#fff"/>
+<rect x="337" y="130" width="8" height="8" fill="#fff"/>
+<rect x="319" y="139" width="8" height="8" fill="#fff"/>
+<rect x="337" y="139" width="8" height="8" fill="#fff"/>
+<rect x="328" y="148" width="8" height="8" fill="#fff"/>
+<rect x="373" y="94" width="8" height="8" fill="#fff"/>
+<rect x="382" y="94" width="8" height="8" fill="#fff"/>
+<rect x="391" y="94" width="8" height="8" fill="#fff"/>
+<rect x="364" y="103" width="8" height="8" fill="#fff"/>
+<rect x="400" y="103" width="8" height="8" fill="#fff"/>
+<rect x="364" y="112" width="8" height="8" fill="#fff"/>
+<rect x="400" y="112" width="8" height="8" fill="#fff"/>
+<rect x="364" y="121" width="8" height="8" fill="#fff"/>
+<rect x="373" y="121" width="8" height="8" fill="#fff"/>
+<rect x="382" y="121" width="8" height="8" fill="#fff"/>
+<rect x="391" y="121" width="8" height="8" fill="#fff"/>
+<rect x="400" y="121" width="8" height="8" fill="#fff"/>
+<rect x="364" y="130" width="8" height="8" fill="#fff"/>
+<rect x="400" y="130" width="8" height="8" fill="#fff"/>
+<rect x="364" y="139" width="8" height="8" fill="#fff"/>
+<rect x="400" y="139" width="8" height="8" fill="#fff"/>
+<rect x="364" y="148" width="8" height="8" fill="#fff"/>
+<rect x="400" y="148" width="8" height="8" fill="#fff"/>
+<rect x="418" y="94" width="8" height="8" fill="#fff"/>
+<rect x="454" y="94" width="8" height="8" fill="#fff"/>
+<rect x="418" y="103" width="8" height="8" fill="#fff"/>
+<rect x="427" y="103" width="8" height="8" fill="#fff"/>
+<rect x="454" y="103" width="8" height="8" fill="#fff"/>
+<rect x="418" y="112" width="8" height="8" fill="#fff"/>
+<rect x="427" y="112" width="8" height="8" fill="#fff"/>
+<rect x="454" y="112" width="8" height="8" fill="#fff"/>
+<rect x="418" y="121" width="8" height="8" fill="#fff"/>
+<rect x="436" y="121" width="8" height="8" fill="#fff"/>
+<rect x="454" y="121" width="8" height="8" fill="#fff"/>
+<rect x="418" y="130" width="8" height="8" fill="#fff"/>
+<rect x="445" y="130" width="8" height="8" fill="#fff"/>
+<rect x="454" y="130" width="8" height="8" fill="#fff"/>
+<rect x="418" y="139" width="8" height="8" fill="#fff"/>
+<rect x="445" y="139" width="8" height="8" fill="#fff"/>
+<rect x="454" y="139" width="8" height="8" fill="#fff"/>
+<rect x="418" y="148" width="8" height="8" fill="#fff"/>
+<rect x="454" y="148" width="8" height="8" fill="#fff"/>
+<rect x="481" y="94" width="8" height="8" fill="#fff"/>
+<rect x="490" y="94" width="8" height="8" fill="#fff"/>
+<rect x="499" y="94" width="8" height="8" fill="#fff"/>
+<rect x="508" y="94" width="8" height="8" fill="#fff"/>
+<rect x="472" y="103" width="8" height="8" fill="#fff"/>
+<rect x="472" y="112" width="8" height="8" fill="#fff"/>
+<rect x="481" y="121" width="8" height="8" fill="#fff"/>
+<rect x="490" y="121" width="8" height="8" fill="#fff"/>
+<rect x="499" y="121" width="8" height="8" fill="#fff"/>
+<rect x="508" y="130" width="8" height="8" fill="#fff"/>
+<rect x="508" y="139" width="8" height="8" fill="#fff"/>
+<rect x="472" y="148" width="8" height="8" fill="#fff"/>
+<rect x="481" y="148" width="8" height="8" fill="#fff"/>
+<rect x="490" y="148" width="8" height="8" fill="#fff"/>
+<rect x="499" y="148" width="8" height="8" fill="#fff"/>
+<rect x="526" y="94" width="8" height="8" fill="#fff"/>
+<rect x="562" y="94" width="8" height="8" fill="#fff"/>
+<rect x="526" y="103" width="8" height="8" fill="#fff"/>
+<rect x="553" y="103" width="8" height="8" fill="#fff"/>
+<rect x="526" y="112" width="8" height="8" fill="#fff"/>
+<rect x="544" y="112" width="8" height="8" fill="#fff"/>
+<rect x="526" y="121" width="8" height="8" fill="#fff"/>
+<rect x="535" y="121" width="8" height="8" fill="#fff"/>
+<rect x="526" y="130" width="8" height="8" fill="#fff"/>
+<rect x="544" y="130" width="8" height="8" fill="#fff"/>
+<rect x="526" y="139" width="8" height="8" fill="#fff"/>
+<rect x="553" y="139" width="8" height="8" fill="#fff"/>
+<rect x="526" y="148" width="8" height="8" fill="#fff"/>
+<rect x="562" y="148" width="8" height="8" fill="#fff"/>
+<rect x="580" y="94" width="8" height="8" fill="#fff"/>
+<rect x="589" y="94" width="8" height="8" fill="#fff"/>
+<rect x="598" y="94" width="8" height="8" fill="#fff"/>
+<rect x="607" y="94" width="8" height="8" fill="#fff"/>
+<rect x="616" y="94" width="8" height="8" fill="#fff"/>
+<rect x="598" y="103" width="8" height="8" fill="#fff"/>
+<rect x="598" y="112" width="8" height="8" fill="#fff"/>
+<rect x="598" y="121" width="8" height="8" fill="#fff"/>
+<rect x="598" y="130" width="8" height="8" fill="#fff"/>
+<rect x="598" y="139" width="8" height="8" fill="#fff"/>
+<rect x="580" y="148" width="8" height="8" fill="#fff"/>
+<rect x="589" y="148" width="8" height="8" fill="#fff"/>
+<rect x="598" y="148" width="8" height="8" fill="#fff"/>
+<rect x="607" y="148" width="8" height="8" fill="#fff"/>
+<rect x="616" y="148" width="8" height="8" fill="#fff"/>
+<rect x="634" y="94" width="8" height="8" fill="#fff"/>
+<rect x="634" y="103" width="8" height="8" fill="#fff"/>
+<rect x="634" y="112" width="8" height="8" fill="#fff"/>
+<rect x="634" y="121" width="8" height="8" fill="#fff"/>
+<rect x="634" y="130" width="8" height="8" fill="#fff"/>
+<rect x="634" y="139" width="8" height="8" fill="#fff"/>
+<rect x="634" y="148" width="8" height="8" fill="#fff"/>
+<rect x="643" y="148" width="8" height="8" fill="#fff"/>
+<rect x="652" y="148" width="8" height="8" fill="#fff"/>
+<rect x="661" y="148" width="8" height="8" fill="#fff"/>
+<rect x="670" y="148" width="8" height="8" fill="#fff"/>
+<rect x="688" y="94" width="8" height="8" fill="#fff"/>
+<rect x="688" y="103" width="8" height="8" fill="#fff"/>
+<rect x="688" y="112" width="8" height="8" fill="#fff"/>
+<rect x="688" y="121" width="8" height="8" fill="#fff"/>
+<rect x="688" y="130" width="8" height="8" fill="#fff"/>
+<rect x="688" y="139" width="8" height="8" fill="#fff"/>
+<rect x="688" y="148" width="8" height="8" fill="#fff"/>
+<rect x="697" y="148" width="8" height="8" fill="#fff"/>
+<rect x="706" y="148" width="8" height="8" fill="#fff"/>
+<rect x="715" y="148" width="8" height="8" fill="#fff"/>
+<rect x="724" y="148" width="8" height="8" fill="#fff"/>
+</mask>
+</defs>
+<rect x="0.5" y="0.5" width="879" height="299" rx="14" fill="url(#bg)" stroke="#233055"/>
+<path d="M14 0.5 H866 A13.5 13.5 0 0 1 879.5 14 V36 H0.5 V14 A13.5 13.5 0 0 1 14 0.5 Z" fill="#0b1024"/>
+<line x1="0.5" y1="36" x2="879.5" y2="36" stroke="#1a2342"/>
+<circle cx="22" cy="18" r="5" fill="#ff5f56"/>
+<circle cx="42" cy="18" r="5" fill="#febc2e"/>
+<circle cx="62" cy="18" r="5" fill="#28c840"/>
+<text x="74" y="22" font-size="12" fill="#5b6a99">~/.claude/skills — luuvanskill</text>
+<g stroke="#10193a" stroke-width="1" opacity="0.6">
+<line x1="16" y1="37" x2="16" y2="299"/>
+<line x1="60" y1="37" x2="60" y2="299"/>
+<line x1="104" y1="37" x2="104" y2="299"/>
+<line x1="148" y1="37" x2="148" y2="299"/>
+<line x1="192" y1="37" x2="192" y2="299"/>
+<line x1="236" y1="37" x2="236" y2="299"/>
+<line x1="280" y1="37" x2="280" y2="299"/>
+<line x1="324" y1="37" x2="324" y2="299"/>
+<line x1="368" y1="37" x2="368" y2="299"/>
+<line x1="412" y1="37" x2="412" y2="299"/>
+<line x1="456" y1="37" x2="456" y2="299"/>
+<line x1="500" y1="37" x2="500" y2="299"/>
+<line x1="544" y1="37" x2="544" y2="299"/>
+<line x1="588" y1="37" x2="588" y2="299"/>
+<line x1="632" y1="37" x2="632" y2="299"/>
+<line x1="676" y1="37" x2="676" y2="299"/>
+<line x1="720" y1="37" x2="720" y2="299"/>
+<line x1="764" y1="37" x2="764" y2="299"/>
+<line x1="808" y1="37" x2="808" y2="299"/>
+<line x1="852" y1="37" x2="852" y2="299"/>
+<line x1="1" y1="48" x2="879" y2="48"/>
+<line x1="1" y1="92" x2="879" y2="92"/>
+<line x1="1" y1="136" x2="879" y2="136"/>
+<line x1="1" y1="180" x2="879" y2="180"/>
+<line x1="1" y1="224" x2="879" y2="224"/>
+<line x1="1" y1="268" x2="879" y2="268"/>
+</g>
+<g fill="#2de6ff">
+<rect x="167" y="91" width="2" height="2"><animate attributeName="opacity" values="0.06;0.65;0.06" dur="2.63s" begin="2.57s" repeatCount="indefinite"/></rect>
+<rect x="463" y="180" width="2" height="2"><animate attributeName="opacity" values="0.06;0.58;0.06" dur="3.19s" begin="2.17s" repeatCount="indefinite"/></rect>
+<rect x="401" y="142" width="3" height="3"><animate attributeName="opacity" values="0.06;0.87;0.06" dur="2.96s" begin="3.19s" repeatCount="indefinite"/></rect>
+<rect x="553" y="65" width="3" height="3"><animate attributeName="opacity" values="0.06;0.62;0.06" dur="2.68s" begin="0.84s" repeatCount="indefinite"/></rect>
+<rect x="364" y="225" width="2" height="2"><animate attributeName="opacity" values="0.06;0.77;0.06" dur="1.89s" begin="0.76s" repeatCount="indefinite"/></rect>
+<rect x="166" y="229" width="3" height="3"><animate attributeName="opacity" values="0.06;0.73;0.06" dur="1.68s" begin="3.21s" repeatCount="indefinite"/></rect>
+<rect x="385" y="140" width="2" height="2"><animate attributeName="opacity" values="0.06;0.60;0.06" dur="1.94s" begin="0.04s" repeatCount="indefinite"/></rect>
+<rect x="289" y="185" width="2" height="2"><animate attributeName="opacity" values="0.06;0.69;0.06" dur="2.67s" begin="2.28s" repeatCount="indefinite"/></rect>
+<rect x="750" y="281" width="2" height="2"><animate attributeName="opacity" values="0.06;0.60;0.06" dur="1.98s" begin="0.17s" repeatCount="indefinite"/></rect>
+<rect x="117" y="76" width="2" height="2"><animate attributeName="opacity" values="0.06;0.56;0.06" dur="2.15s" begin="1.31s" repeatCount="indefinite"/></rect>
+<rect x="145" y="226" width="2" height="2"><animate attributeName="opacity" values="0.06;0.73;0.06" dur="3.04s" begin="2.10s" repeatCount="indefinite"/></rect>
+<rect x="54" y="88" width="2" height="2"><animate attributeName="opacity" values="0.06;0.61;0.06" dur="2.14s" begin="3.33s" repeatCount="indefinite"/></rect>
+<rect x="462" y="194" width="2" height="2"><animate attributeName="opacity" values="0.06;0.56;0.06" dur="3.65s" begin="2.99s" repeatCount="indefinite"/></rect>
+<rect x="758" y="204" width="2" height="2"><animate attributeName="opacity" values="0.06;0.83;0.06" dur="3.47s" begin="1.58s" repeatCount="indefinite"/></rect>
+<rect x="844" y="204" width="2" height="2"><animate attributeName="opacity" values="0.06;0.51;0.06" dur="2.43s" begin="1.94s" repeatCount="indefinite"/></rect>
+<rect x="333" y="201" width="2" height="2"><animate attributeName="opacity" values="0.06;0.57;0.06" dur="3.07s" begin="1.35s" repeatCount="indefinite"/></rect>
+<rect x="166" y="166" width="2" height="2"><animate attributeName="opacity" values="0.06;0.51;0.06" dur="1.74s" begin="3.68s" repeatCount="indefinite"/></rect>
+<rect x="428" y="208" width="2" height="2"><animate attributeName="opacity" values="0.06;0.78;0.06" dur="2.48s" begin="2.74s" repeatCount="indefinite"/></rect>
+<rect x="409" y="146" width="2" height="2"><animate attributeName="opacity" values="0.06;0.52;0.06" dur="3.34s" begin="0.42s" repeatCount="indefinite"/></rect>
+<rect x="114" y="148" width="2" height="2"><animate attributeName="opacity" values="0.06;0.57;0.06" dur="3.00s" begin="2.41s" repeatCount="indefinite"/></rect>
+<rect x="606" y="160" width="2" height="2"><animate attributeName="opacity" values="0.06;0.67;0.06" dur="2.58s" begin="1.02s" repeatCount="indefinite"/></rect>
+<rect x="770" y="72" width="3" height="3"><animate attributeName="opacity" values="0.06;0.86;0.06" dur="3.27s" begin="1.77s" repeatCount="indefinite"/></rect>
+<rect x="350" y="255" width="2" height="2"><animate attributeName="opacity" values="0.06;0.82;0.06" dur="3.76s" begin="1.51s" repeatCount="indefinite"/></rect>
+<rect x="329" y="65" width="2" height="2"><animate attributeName="opacity" values="0.06;0.78;0.06" dur="2.30s" begin="0.45s" repeatCount="indefinite"/></rect>
+<rect x="572" y="166" width="3" height="3"><animate attributeName="opacity" values="0.06;0.51;0.06" dur="2.35s" begin="2.35s" repeatCount="indefinite"/></rect>
+<rect x="706" y="63" width="2" height="2"><animate attributeName="opacity" values="0.06;0.54;0.06" dur="3.63s" begin="1.17s" repeatCount="indefinite"/></rect>
+<rect x="198" y="100" width="2" height="2"><animate attributeName="opacity" values="0.06;0.61;0.06" dur="3.60s" begin="1.40s" repeatCount="indefinite"/></rect>
+<rect x="727" y="253" width="3" height="3"><animate attributeName="opacity" values="0.06;0.82;0.06" dur="3.44s" begin="0.51s" repeatCount="indefinite"/></rect>
+<rect x="608" y="198" width="2" height="2"><animate attributeName="opacity" values="0.06;0.85;0.06" dur="1.76s" begin="2.65s" repeatCount="indefinite"/></rect>
+<rect x="803" y="85" width="2" height="2"><animate attributeName="opacity" values="0.06;0.52;0.06" dur="2.76s" begin="0.07s" repeatCount="indefinite"/></rect>
+<rect x="564" y="156" width="2" height="2"><animate attributeName="opacity" values="0.06;0.51;0.06" dur="2.92s" begin="1.47s" repeatCount="indefinite"/></rect>
+<rect x="768" y="93" width="2" height="2"><animate attributeName="opacity" values="0.06;0.52;0.06" dur="3.22s" begin="1.44s" repeatCount="indefinite"/></rect>
+<rect x="248" y="92" width="2" height="2"><animate attributeName="opacity" values="0.06;0.67;0.06" dur="3.89s" begin="2.64s" repeatCount="indefinite"/></rect>
+<rect x="208" y="128" width="2" height="2"><animate attributeName="opacity" values="0.06;0.59;0.06" dur="3.68s" begin="1.94s" repeatCount="indefinite"/></rect>
+<rect x="364" y="220" width="2" height="2"><animate attributeName="opacity" values="0.06;0.84;0.06" dur="2.89s" begin="2.09s" repeatCount="indefinite"/></rect>
+<rect x="323" y="134" width="2" height="2"><animate attributeName="opacity" values="0.06;0.80;0.06" dur="3.17s" begin="3.92s" repeatCount="indefinite"/></rect>
+<rect x="719" y="103" width="2" height="2"><animate attributeName="opacity" values="0.06;0.64;0.06" dur="2.77s" begin="3.40s" repeatCount="indefinite"/></rect>
+<rect x="822" y="194" width="2" height="2"><animate attributeName="opacity" values="0.06;0.76;0.06" dur="3.04s" begin="0.19s" repeatCount="indefinite"/></rect>
+<rect x="778" y="143" width="2" height="2"><animate attributeName="opacity" values="0.06;0.80;0.06" dur="2.13s" begin="3.77s" repeatCount="indefinite"/></rect>
+<rect x="567" y="143" width="2" height="2"><animate attributeName="opacity" values="0.06;0.55;0.06" dur="1.72s" begin="3.29s" repeatCount="indefinite"/></rect>
+<rect x="775" y="290" width="2" height="2"><animate attributeName="opacity" values="0.06;0.89;0.06" dur="2.59s" begin="3.71s" repeatCount="indefinite"/></rect>
+<rect x="149" y="127" width="3" height="3"><animate attributeName="opacity" values="0.06;0.67;0.06" dur="2.91s" begin="1.91s" repeatCount="indefinite"/></rect>
+<rect x="853" y="147" width="2" height="2"><animate attributeName="opacity" values="0.06;0.64;0.06" dur="2.26s" begin="2.82s" repeatCount="indefinite"/></rect>
+<rect x="88" y="71" width="3" height="3"><animate attributeName="opacity" values="0.06;0.67;0.06" dur="3.07s" begin="2.24s" repeatCount="indefinite"/></rect>
+<rect x="261" y="114" width="2" height="2"><animate attributeName="opacity" values="0.06;0.83;0.06" dur="1.97s" begin="2.49s" repeatCount="indefinite"/></rect>
+<rect x="571" y="169" width="3" height="3"><animate attributeName="opacity" values="0.06;0.86;0.06" dur="3.07s" begin="1.76s" repeatCount="indefinite"/></rect>
+<rect x="278" y="291" width="2" height="2"><animate attributeName="opacity" values="0.06;0.70;0.06" dur="1.96s" begin="1.93s" repeatCount="indefinite"/></rect>
+<rect x="746" y="156" width="3" height="3"><animate attributeName="opacity" values="0.06;0.83;0.06" dur="2.78s" begin="2.36s" repeatCount="indefinite"/></rect>
+<rect x="199" y="197" width="2" height="2"><animate attributeName="opacity" values="0.06;0.82;0.06" dur="2.88s" begin="0.63s" repeatCount="indefinite"/></rect>
+<rect x="223" y="292" width="2" height="2"><animate attributeName="opacity" values="0.06;0.81;0.06" dur="3.14s" begin="0.50s" repeatCount="indefinite"/></rect>
+<rect x="354" y="78" width="3" height="3"><animate attributeName="opacity" values="0.06;0.82;0.06" dur="2.15s" begin="1.89s" repeatCount="indefinite"/></rect>
+<rect x="43" y="152" width="3" height="3"><animate attributeName="opacity" values="0.06;0.64;0.06" dur="2.75s" begin="1.76s" repeatCount="indefinite"/></rect>
+<rect x="742" y="267" width="2" height="2"><animate attributeName="opacity" values="0.06;0.65;0.06" dur="2.78s" begin="3.48s" repeatCount="indefinite"/></rect>
+<rect x="465" y="91" width="3" height="3"><animate attributeName="opacity" values="0.06;0.66;0.06" dur="2.59s" begin="3.35s" repeatCount="indefinite"/></rect>
+<rect x="728" y="118" width="2" height="2"><animate attributeName="opacity" values="0.06;0.51;0.06" dur="2.36s" begin="0.07s" repeatCount="indefinite"/></rect>
+<rect x="355" y="289" width="2" height="2"><animate attributeName="opacity" values="0.06;0.79;0.06" dur="3.91s" begin="0.51s" repeatCount="indefinite"/></rect>
+<rect x="592" y="146" width="2" height="2"><animate attributeName="opacity" values="0.06;0.52;0.06" dur="3.12s" begin="3.74s" repeatCount="indefinite"/></rect>
+<rect x="164" y="58" width="2" height="2"><animate attributeName="opacity" values="0.06;0.60;0.06" dur="2.96s" begin="3.20s" repeatCount="indefinite"/></rect>
+<rect x="647" y="162" width="2" height="2"><animate attributeName="opacity" values="0.06;0.57;0.06" dur="2.46s" begin="1.93s" repeatCount="indefinite"/></rect>
+<rect x="479" y="256" width="3" height="3"><animate attributeName="opacity" values="0.06;0.51;0.06" dur="3.03s" begin="1.39s" repeatCount="indefinite"/></rect>
+<rect x="314" y="61" width="3" height="3"><animate attributeName="opacity" values="0.06;0.63;0.06" dur="3.84s" begin="3.76s" repeatCount="indefinite"/></rect>
+<rect x="370" y="159" width="3" height="3"><animate attributeName="opacity" values="0.06;0.63;0.06" dur="2.42s" begin="0.75s" repeatCount="indefinite"/></rect>
+<rect x="614" y="104" width="2" height="2"><animate attributeName="opacity" values="0.06;0.68;0.06" dur="3.05s" begin="1.37s" repeatCount="indefinite"/></rect>
+<rect x="754" y="46" width="2" height="2"><animate attributeName="opacity" values="0.06;0.86;0.06" dur="1.81s" begin="2.66s" repeatCount="indefinite"/></rect>
+<rect x="827" y="134" width="3" height="3"><animate attributeName="opacity" values="0.06;0.75;0.06" dur="2.38s" begin="2.25s" repeatCount="indefinite"/></rect>
+<rect x="673" y="206" width="2" height="2"><animate attributeName="opacity" values="0.06;0.67;0.06" dur="2.39s" begin="1.35s" repeatCount="indefinite"/></rect>
+<rect x="23" y="217" width="2" height="2"><animate attributeName="opacity" values="0.06;0.76;0.06" dur="1.88s" begin="3.36s" repeatCount="indefinite"/></rect>
+<rect x="834" y="64" width="2" height="2"><animate attributeName="opacity" values="0.06;0.82;0.06" dur="3.38s" begin="1.55s" repeatCount="indefinite"/></rect>
+<rect x="268" y="111" width="2" height="2"><animate attributeName="opacity" values="0.06;0.88;0.06" dur="2.62s" begin="3.15s" repeatCount="indefinite"/></rect>
+<rect x="561" y="276" width="3" height="3"><animate attributeName="opacity" values="0.06;0.51;0.06" dur="3.01s" begin="3.93s" repeatCount="indefinite"/></rect>
+</g>
+<g transform="translate(148,94)" fill="url(#title)" filter="url(#glow)">
+<rect x="0" y="0" width="8" height="8" opacity="0" transform="translate(-7,50)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.27s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-7 50;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.27s" fill="freeze"/>
+</rect>
+<rect x="0" y="9" width="8" height="8" opacity="0" transform="translate(64,36)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.25s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="64 36;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.25s" fill="freeze"/>
+</rect>
+<rect x="0" y="18" width="8" height="8" opacity="0" transform="translate(-56,45)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.24s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-56 45;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.24s" fill="freeze"/>
+</rect>
+<rect x="0" y="27" width="8" height="8" opacity="0" transform="translate(-54,-33)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.25s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-54 -33;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.25s" fill="freeze"/>
+</rect>
+<rect x="0" y="36" width="8" height="8" opacity="0" transform="translate(-72,-29)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.16s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-72 -29;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.16s" fill="freeze"/>
+</rect>
+<rect x="0" y="45" width="8" height="8" opacity="0" transform="translate(16,-12)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.18s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="16 -12;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.18s" fill="freeze"/>
+</rect>
+<rect x="0" y="54" width="8" height="8" opacity="0" transform="translate(51,-53)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.19s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="51 -53;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.19s" fill="freeze"/>
+</rect>
+<rect x="9" y="54" width="8" height="8" opacity="0" transform="translate(-70,33)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.18s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-70 33;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.18s" fill="freeze"/>
+</rect>
+<rect x="18" y="54" width="8" height="8" opacity="0" transform="translate(10,-35)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.22s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="10 -35;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.22s" fill="freeze"/>
+</rect>
+<rect x="27" y="54" width="8" height="8" opacity="0" transform="translate(47,13)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.23s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="47 13;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.23s" fill="freeze"/>
+</rect>
+<rect x="36" y="54" width="8" height="8" opacity="0" transform="translate(51,-49)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.32s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="51 -49;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.32s" fill="freeze"/>
+</rect>
+<rect x="54" y="0" width="8" height="8" opacity="0" transform="translate(-17,-11)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.41s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-17 -11;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.41s" fill="freeze"/>
+</rect>
+<rect x="90" y="0" width="8" height="8" opacity="0" transform="translate(64,20)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.40s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="64 20;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.40s" fill="freeze"/>
+</rect>
+<rect x="54" y="9" width="8" height="8" opacity="0" transform="translate(67,46)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.30s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="67 46;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.30s" fill="freeze"/>
+</rect>
+<rect x="90" y="9" width="8" height="8" opacity="0" transform="translate(16,-40)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.49s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="16 -40;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.49s" fill="freeze"/>
+</rect>
+<rect x="54" y="18" width="8" height="8" opacity="0" transform="translate(-8,-3)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.29s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-8 -3;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.29s" fill="freeze"/>
+</rect>
+<rect x="90" y="18" width="8" height="8" opacity="0" transform="translate(29,-12)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.36s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="29 -12;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.36s" fill="freeze"/>
+</rect>
+<rect x="54" y="27" width="8" height="8" opacity="0" transform="translate(-68,7)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.30s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-68 7;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.30s" fill="freeze"/>
+</rect>
+<rect x="90" y="27" width="8" height="8" opacity="0" transform="translate(64,-22)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.40s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="64 -22;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.40s" fill="freeze"/>
+</rect>
+<rect x="54" y="36" width="8" height="8" opacity="0" transform="translate(50,29)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.35s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="50 29;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.35s" fill="freeze"/>
+</rect>
+<rect x="90" y="36" width="8" height="8" opacity="0" transform="translate(75,33)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.42s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="75 33;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.42s" fill="freeze"/>
+</rect>
+<rect x="54" y="45" width="8" height="8" opacity="0" transform="translate(-55,41)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.28s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-55 41;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.28s" fill="freeze"/>
+</rect>
+<rect x="90" y="45" width="8" height="8" opacity="0" transform="translate(-60,15)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.39s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-60 15;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.39s" fill="freeze"/>
+</rect>
+<rect x="63" y="54" width="8" height="8" opacity="0" transform="translate(14,-26)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.30s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="14 -26;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.30s" fill="freeze"/>
+</rect>
+<rect x="72" y="54" width="8" height="8" opacity="0" transform="translate(28,47)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.32s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="28 47;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.32s" fill="freeze"/>
+</rect>
+<rect x="81" y="54" width="8" height="8" opacity="0" transform="translate(13,20)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.43s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="13 20;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.43s" fill="freeze"/>
+</rect>
+<rect x="108" y="0" width="8" height="8" opacity="0" transform="translate(-61,18)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.44s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-61 18;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.44s" fill="freeze"/>
+</rect>
+<rect x="144" y="0" width="8" height="8" opacity="0" transform="translate(-10,23)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.51s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-10 23;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.51s" fill="freeze"/>
+</rect>
+<rect x="108" y="9" width="8" height="8" opacity="0" transform="translate(-52,31)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.51s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-52 31;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.51s" fill="freeze"/>
+</rect>
+<rect x="144" y="9" width="8" height="8" opacity="0" transform="translate(63,22)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.48s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="63 22;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.48s" fill="freeze"/>
+</rect>
+<rect x="108" y="18" width="8" height="8" opacity="0" transform="translate(-52,-9)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.46s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-52 -9;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.46s" fill="freeze"/>
+</rect>
+<rect x="144" y="18" width="8" height="8" opacity="0" transform="translate(35,-16)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.53s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="35 -16;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.53s" fill="freeze"/>
+</rect>
+<rect x="108" y="27" width="8" height="8" opacity="0" transform="translate(-12,12)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.45s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-12 12;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.45s" fill="freeze"/>
+</rect>
+<rect x="144" y="27" width="8" height="8" opacity="0" transform="translate(38,45)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.48s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="38 45;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.48s" fill="freeze"/>
+</rect>
+<rect x="108" y="36" width="8" height="8" opacity="0" transform="translate(24,-20)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.47s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="24 -20;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.47s" fill="freeze"/>
+</rect>
+<rect x="144" y="36" width="8" height="8" opacity="0" transform="translate(19,48)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.59s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="19 48;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.59s" fill="freeze"/>
+</rect>
+<rect x="108" y="45" width="8" height="8" opacity="0" transform="translate(-10,-4)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.51s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-10 -4;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.51s" fill="freeze"/>
+</rect>
+<rect x="144" y="45" width="8" height="8" opacity="0" transform="translate(-52,41)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.50s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-52 41;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.50s" fill="freeze"/>
+</rect>
+<rect x="117" y="54" width="8" height="8" opacity="0" transform="translate(-48,0)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.49s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-48 0;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.49s" fill="freeze"/>
+</rect>
+<rect x="126" y="54" width="8" height="8" opacity="0" transform="translate(-49,51)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.50s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-49 51;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.50s" fill="freeze"/>
+</rect>
+<rect x="135" y="54" width="8" height="8" opacity="0" transform="translate(49,-45)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.58s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="49 -45;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.58s" fill="freeze"/>
+</rect>
+<rect x="162" y="0" width="8" height="8" opacity="0" transform="translate(-63,3)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.58s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-63 3;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.58s" fill="freeze"/>
+</rect>
+<rect x="198" y="0" width="8" height="8" opacity="0" transform="translate(65,37)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.72s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="65 37;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.72s" fill="freeze"/>
+</rect>
+<rect x="162" y="9" width="8" height="8" opacity="0" transform="translate(-33,-51)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.63s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-33 -51;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.63s" fill="freeze"/>
+</rect>
+<rect x="198" y="9" width="8" height="8" opacity="0" transform="translate(-30,32)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.60s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-30 32;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.60s" fill="freeze"/>
+</rect>
+<rect x="162" y="18" width="8" height="8" opacity="0" transform="translate(70,-8)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.63s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="70 -8;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.63s" fill="freeze"/>
+</rect>
+<rect x="198" y="18" width="8" height="8" opacity="0" transform="translate(-72,44)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.63s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-72 44;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.63s" fill="freeze"/>
+</rect>
+<rect x="162" y="27" width="8" height="8" opacity="0" transform="translate(-41,-8)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.63s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-41 -8;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.63s" fill="freeze"/>
+</rect>
+<rect x="198" y="27" width="8" height="8" opacity="0" transform="translate(66,-35)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.61s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="66 -35;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.61s" fill="freeze"/>
+</rect>
+<rect x="171" y="36" width="8" height="8" opacity="0" transform="translate(-8,23)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.56s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-8 23;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.56s" fill="freeze"/>
+</rect>
+<rect x="189" y="36" width="8" height="8" opacity="0" transform="translate(-34,-26)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.57s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-34 -26;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.57s" fill="freeze"/>
+</rect>
+<rect x="171" y="45" width="8" height="8" opacity="0" transform="translate(25,-19)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.53s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="25 -19;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.53s" fill="freeze"/>
+</rect>
+<rect x="189" y="45" width="8" height="8" opacity="0" transform="translate(3,-39)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.62s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="3 -39;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.62s" fill="freeze"/>
+</rect>
+<rect x="180" y="54" width="8" height="8" opacity="0" transform="translate(-10,-26)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.67s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-10 -26;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.67s" fill="freeze"/>
+</rect>
+<rect x="225" y="0" width="8" height="8" opacity="0" transform="translate(52,-32)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.69s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="52 -32;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.69s" fill="freeze"/>
+</rect>
+<rect x="234" y="0" width="8" height="8" opacity="0" transform="translate(-65,51)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.74s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-65 51;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.74s" fill="freeze"/>
+</rect>
+<rect x="243" y="0" width="8" height="8" opacity="0" transform="translate(51,-22)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.77s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="51 -22;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.77s" fill="freeze"/>
+</rect>
+<rect x="216" y="9" width="8" height="8" opacity="0" transform="translate(-10,-1)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.72s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-10 -1;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.72s" fill="freeze"/>
+</rect>
+<rect x="252" y="9" width="8" height="8" opacity="0" transform="translate(-60,46)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.71s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-60 46;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.71s" fill="freeze"/>
+</rect>
+<rect x="216" y="18" width="8" height="8" opacity="0" transform="translate(-31,0)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.75s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-31 0;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.75s" fill="freeze"/>
+</rect>
+<rect x="252" y="18" width="8" height="8" opacity="0" transform="translate(63,47)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.72s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="63 47;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.72s" fill="freeze"/>
+</rect>
+<rect x="216" y="27" width="8" height="8" opacity="0" transform="translate(1,30)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.64s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="1 30;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.64s" fill="freeze"/>
+</rect>
+<rect x="225" y="27" width="8" height="8" opacity="0" transform="translate(71,-42)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.73s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="71 -42;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.73s" fill="freeze"/>
+</rect>
+<rect x="234" y="27" width="8" height="8" opacity="0" transform="translate(7,52)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.80s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="7 52;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.80s" fill="freeze"/>
+</rect>
+<rect x="243" y="27" width="8" height="8" opacity="0" transform="translate(28,-37)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.78s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="28 -37;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.78s" fill="freeze"/>
+</rect>
+<rect x="252" y="27" width="8" height="8" opacity="0" transform="translate(-71,-35)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.72s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-71 -35;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.72s" fill="freeze"/>
+</rect>
+<rect x="216" y="36" width="8" height="8" opacity="0" transform="translate(-45,-20)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.68s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-45 -20;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.68s" fill="freeze"/>
+</rect>
+<rect x="252" y="36" width="8" height="8" opacity="0" transform="translate(-1,12)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.74s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-1 12;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.74s" fill="freeze"/>
+</rect>
+<rect x="216" y="45" width="8" height="8" opacity="0" transform="translate(27,-21)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.73s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="27 -21;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.73s" fill="freeze"/>
+</rect>
+<rect x="252" y="45" width="8" height="8" opacity="0" transform="translate(4,19)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.74s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="4 19;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.74s" fill="freeze"/>
+</rect>
+<rect x="216" y="54" width="8" height="8" opacity="0" transform="translate(32,-32)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.63s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="32 -32;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.63s" fill="freeze"/>
+</rect>
+<rect x="252" y="54" width="8" height="8" opacity="0" transform="translate(-66,-22)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.80s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-66 -22;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.80s" fill="freeze"/>
+</rect>
+<rect x="270" y="0" width="8" height="8" opacity="0" transform="translate(-64,-52)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.85s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-64 -52;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.85s" fill="freeze"/>
+</rect>
+<rect x="306" y="0" width="8" height="8" opacity="0" transform="translate(50,-24)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.89s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="50 -24;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.89s" fill="freeze"/>
+</rect>
+<rect x="270" y="9" width="8" height="8" opacity="0" transform="translate(19,-16)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.88s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="19 -16;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.88s" fill="freeze"/>
+</rect>
+<rect x="279" y="9" width="8" height="8" opacity="0" transform="translate(-57,-50)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.86s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-57 -50;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.86s" fill="freeze"/>
+</rect>
+<rect x="306" y="9" width="8" height="8" opacity="0" transform="translate(-13,27)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.96s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-13 27;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.96s" fill="freeze"/>
+</rect>
+<rect x="270" y="18" width="8" height="8" opacity="0" transform="translate(-17,42)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.83s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-17 42;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.83s" fill="freeze"/>
+</rect>
+<rect x="279" y="18" width="8" height="8" opacity="0" transform="translate(41,26)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.79s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="41 26;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.79s" fill="freeze"/>
+</rect>
+<rect x="306" y="18" width="8" height="8" opacity="0" transform="translate(45,32)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.95s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="45 32;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.95s" fill="freeze"/>
+</rect>
+<rect x="270" y="27" width="8" height="8" opacity="0" transform="translate(41,-17)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.84s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="41 -17;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.84s" fill="freeze"/>
+</rect>
+<rect x="288" y="27" width="8" height="8" opacity="0" transform="translate(33,45)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.91s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="33 45;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.91s" fill="freeze"/>
+</rect>
+<rect x="306" y="27" width="8" height="8" opacity="0" transform="translate(63,-1)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.90s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="63 -1;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.90s" fill="freeze"/>
+</rect>
+<rect x="270" y="36" width="8" height="8" opacity="0" transform="translate(31,-22)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.87s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="31 -22;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.87s" fill="freeze"/>
+</rect>
+<rect x="297" y="36" width="8" height="8" opacity="0" transform="translate(25,-30)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.91s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="25 -30;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.91s" fill="freeze"/>
+</rect>
+<rect x="306" y="36" width="8" height="8" opacity="0" transform="translate(66,34)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.88s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="66 34;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.88s" fill="freeze"/>
+</rect>
+<rect x="270" y="45" width="8" height="8" opacity="0" transform="translate(-1,4)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.86s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-1 4;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.86s" fill="freeze"/>
+</rect>
+<rect x="297" y="45" width="8" height="8" opacity="0" transform="translate(-4,3)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.93s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-4 3;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.93s" fill="freeze"/>
+</rect>
+<rect x="306" y="45" width="8" height="8" opacity="0" transform="translate(0,21)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.83s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="0 21;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.83s" fill="freeze"/>
+</rect>
+<rect x="270" y="54" width="8" height="8" opacity="0" transform="translate(-42,12)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.77s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-42 12;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.77s" fill="freeze"/>
+</rect>
+<rect x="306" y="54" width="8" height="8" opacity="0" transform="translate(-2,-53)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.93s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-2 -53;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.93s" fill="freeze"/>
+</rect>
+<rect x="333" y="0" width="8" height="8" opacity="0" transform="translate(42,5)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.00s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="42 5;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.00s" fill="freeze"/>
+</rect>
+<rect x="342" y="0" width="8" height="8" opacity="0" transform="translate(-50,-24)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.94s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-50 -24;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.94s" fill="freeze"/>
+</rect>
+<rect x="351" y="0" width="8" height="8" opacity="0" transform="translate(-44,10)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.94s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-44 10;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.94s" fill="freeze"/>
+</rect>
+<rect x="360" y="0" width="8" height="8" opacity="0" transform="translate(55,-8)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.95s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="55 -8;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.95s" fill="freeze"/>
+</rect>
+<rect x="324" y="9" width="8" height="8" opacity="0" transform="translate(-20,39)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.88s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-20 39;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.88s" fill="freeze"/>
+</rect>
+<rect x="324" y="18" width="8" height="8" opacity="0" transform="translate(5,10)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.95s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="5 10;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.95s" fill="freeze"/>
+</rect>
+<rect x="333" y="27" width="8" height="8" opacity="0" transform="translate(-48,3)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.02s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-48 3;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.02s" fill="freeze"/>
+</rect>
+<rect x="342" y="27" width="8" height="8" opacity="0" transform="translate(-43,10)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.94s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-43 10;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.94s" fill="freeze"/>
+</rect>
+<rect x="351" y="27" width="8" height="8" opacity="0" transform="translate(-56,51)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.00s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-56 51;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.00s" fill="freeze"/>
+</rect>
+<rect x="360" y="36" width="8" height="8" opacity="0" transform="translate(-35,32)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.98s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-35 32;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.98s" fill="freeze"/>
+</rect>
+<rect x="360" y="45" width="8" height="8" opacity="0" transform="translate(39,23)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.02s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="39 23;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.02s" fill="freeze"/>
+</rect>
+<rect x="324" y="54" width="8" height="8" opacity="0" transform="translate(28,12)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.98s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="28 12;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.98s" fill="freeze"/>
+</rect>
+<rect x="333" y="54" width="8" height="8" opacity="0" transform="translate(-3,54)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.01s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-3 54;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.01s" fill="freeze"/>
+</rect>
+<rect x="342" y="54" width="8" height="8" opacity="0" transform="translate(-34,-36)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="0.98s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-34 -36;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="0.98s" fill="freeze"/>
+</rect>
+<rect x="351" y="54" width="8" height="8" opacity="0" transform="translate(59,36)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.02s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="59 36;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.02s" fill="freeze"/>
+</rect>
+<rect x="378" y="0" width="8" height="8" opacity="0" transform="translate(7,4)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.12s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="7 4;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.12s" fill="freeze"/>
+</rect>
+<rect x="414" y="0" width="8" height="8" opacity="0" transform="translate(-54,41)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.09s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-54 41;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.09s" fill="freeze"/>
+</rect>
+<rect x="378" y="9" width="8" height="8" opacity="0" transform="translate(70,33)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.13s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="70 33;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.13s" fill="freeze"/>
+</rect>
+<rect x="405" y="9" width="8" height="8" opacity="0" transform="translate(74,41)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.07s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="74 41;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.07s" fill="freeze"/>
+</rect>
+<rect x="378" y="18" width="8" height="8" opacity="0" transform="translate(-15,29)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.03s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-15 29;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.03s" fill="freeze"/>
+</rect>
+<rect x="396" y="18" width="8" height="8" opacity="0" transform="translate(42,6)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.07s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="42 6;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.07s" fill="freeze"/>
+</rect>
+<rect x="378" y="27" width="8" height="8" opacity="0" transform="translate(-24,-23)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.05s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-24 -23;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.05s" fill="freeze"/>
+</rect>
+<rect x="387" y="27" width="8" height="8" opacity="0" transform="translate(5,23)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.14s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="5 23;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.14s" fill="freeze"/>
+</rect>
+<rect x="378" y="36" width="8" height="8" opacity="0" transform="translate(18,55)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.10s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="18 55;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.10s" fill="freeze"/>
+</rect>
+<rect x="396" y="36" width="8" height="8" opacity="0" transform="translate(-12,-13)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.08s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-12 -13;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.08s" fill="freeze"/>
+</rect>
+<rect x="378" y="45" width="8" height="8" opacity="0" transform="translate(-8,-4)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.03s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-8 -4;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.03s" fill="freeze"/>
+</rect>
+<rect x="405" y="45" width="8" height="8" opacity="0" transform="translate(40,-47)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.17s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="40 -47;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.17s" fill="freeze"/>
+</rect>
+<rect x="378" y="54" width="8" height="8" opacity="0" transform="translate(-62,53)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.00s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-62 53;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.00s" fill="freeze"/>
+</rect>
+<rect x="414" y="54" width="8" height="8" opacity="0" transform="translate(-69,6)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.10s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-69 6;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.10s" fill="freeze"/>
+</rect>
+<rect x="432" y="0" width="8" height="8" opacity="0" transform="translate(-50,-48)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.14s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-50 -48;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.14s" fill="freeze"/>
+</rect>
+<rect x="441" y="0" width="8" height="8" opacity="0" transform="translate(59,50)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.18s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="59 50;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.18s" fill="freeze"/>
+</rect>
+<rect x="450" y="0" width="8" height="8" opacity="0" transform="translate(-49,32)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.18s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-49 32;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.18s" fill="freeze"/>
+</rect>
+<rect x="459" y="0" width="8" height="8" opacity="0" transform="translate(0,-47)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.23s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="0 -47;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.23s" fill="freeze"/>
+</rect>
+<rect x="468" y="0" width="8" height="8" opacity="0" transform="translate(1,22)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.20s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="1 22;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.20s" fill="freeze"/>
+</rect>
+<rect x="450" y="9" width="8" height="8" opacity="0" transform="translate(7,14)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.17s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="7 14;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.17s" fill="freeze"/>
+</rect>
+<rect x="450" y="18" width="8" height="8" opacity="0" transform="translate(63,-22)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.28s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="63 -22;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.28s" fill="freeze"/>
+</rect>
+<rect x="450" y="27" width="8" height="8" opacity="0" transform="translate(-20,-8)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.23s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-20 -8;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.23s" fill="freeze"/>
+</rect>
+<rect x="450" y="36" width="8" height="8" opacity="0" transform="translate(2,-25)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.21s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="2 -25;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.21s" fill="freeze"/>
+</rect>
+<rect x="450" y="45" width="8" height="8" opacity="0" transform="translate(70,19)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.19s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="70 19;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.19s" fill="freeze"/>
+</rect>
+<rect x="432" y="54" width="8" height="8" opacity="0" transform="translate(-30,-12)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.15s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-30 -12;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.15s" fill="freeze"/>
+</rect>
+<rect x="441" y="54" width="8" height="8" opacity="0" transform="translate(62,10)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.23s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="62 10;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.23s" fill="freeze"/>
+</rect>
+<rect x="450" y="54" width="8" height="8" opacity="0" transform="translate(-8,-11)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.26s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-8 -11;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.26s" fill="freeze"/>
+</rect>
+<rect x="459" y="54" width="8" height="8" opacity="0" transform="translate(-2,49)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.23s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-2 49;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.23s" fill="freeze"/>
+</rect>
+<rect x="468" y="54" width="8" height="8" opacity="0" transform="translate(55,-38)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.32s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="55 -38;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.32s" fill="freeze"/>
+</rect>
+<rect x="486" y="0" width="8" height="8" opacity="0" transform="translate(-2,-38)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.28s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-2 -38;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.28s" fill="freeze"/>
+</rect>
+<rect x="486" y="9" width="8" height="8" opacity="0" transform="translate(37,47)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.28s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="37 47;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.28s" fill="freeze"/>
+</rect>
+<rect x="486" y="18" width="8" height="8" opacity="0" transform="translate(52,24)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.32s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="52 24;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.32s" fill="freeze"/>
+</rect>
+<rect x="486" y="27" width="8" height="8" opacity="0" transform="translate(-40,43)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.32s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-40 43;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.32s" fill="freeze"/>
+</rect>
+<rect x="486" y="36" width="8" height="8" opacity="0" transform="translate(-43,-48)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.23s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-43 -48;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.23s" fill="freeze"/>
+</rect>
+<rect x="486" y="45" width="8" height="8" opacity="0" transform="translate(11,-39)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.31s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="11 -39;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.31s" fill="freeze"/>
+</rect>
+<rect x="486" y="54" width="8" height="8" opacity="0" transform="translate(8,-1)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.30s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="8 -1;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.30s" fill="freeze"/>
+</rect>
+<rect x="495" y="54" width="8" height="8" opacity="0" transform="translate(30,-6)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.34s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="30 -6;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.34s" fill="freeze"/>
+</rect>
+<rect x="504" y="54" width="8" height="8" opacity="0" transform="translate(8,-16)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.35s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="8 -16;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.35s" fill="freeze"/>
+</rect>
+<rect x="513" y="54" width="8" height="8" opacity="0" transform="translate(13,13)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.35s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="13 13;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.35s" fill="freeze"/>
+</rect>
+<rect x="522" y="54" width="8" height="8" opacity="0" transform="translate(-28,-16)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.44s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-28 -16;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.44s" fill="freeze"/>
+</rect>
+<rect x="540" y="0" width="8" height="8" opacity="0" transform="translate(-2,-39)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.37s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-2 -39;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.37s" fill="freeze"/>
+</rect>
+<rect x="540" y="9" width="8" height="8" opacity="0" transform="translate(11,37)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.39s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="11 37;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.39s" fill="freeze"/>
+</rect>
+<rect x="540" y="18" width="8" height="8" opacity="0" transform="translate(58,22)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.46s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="58 22;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.46s" fill="freeze"/>
+</rect>
+<rect x="540" y="27" width="8" height="8" opacity="0" transform="translate(-29,-34)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.39s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-29 -34;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.39s" fill="freeze"/>
+</rect>
+<rect x="540" y="36" width="8" height="8" opacity="0" transform="translate(69,38)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.38s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="69 38;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.38s" fill="freeze"/>
+</rect>
+<rect x="540" y="45" width="8" height="8" opacity="0" transform="translate(68,3)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.42s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="68 3;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.42s" fill="freeze"/>
+</rect>
+<rect x="540" y="54" width="8" height="8" opacity="0" transform="translate(61,-11)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.46s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="61 -11;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.46s" fill="freeze"/>
+</rect>
+<rect x="549" y="54" width="8" height="8" opacity="0" transform="translate(1,43)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.41s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="1 43;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.41s" fill="freeze"/>
+</rect>
+<rect x="558" y="54" width="8" height="8" opacity="0" transform="translate(-33,36)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.39s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="-33 36;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.39s" fill="freeze"/>
+</rect>
+<rect x="567" y="54" width="8" height="8" opacity="0" transform="translate(71,-16)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.53s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="71 -16;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.53s" fill="freeze"/>
+</rect>
+<rect x="576" y="54" width="8" height="8" opacity="0" transform="translate(14,-10)">
+<animate attributeName="opacity" values="0;1" dur="0.55s" begin="1.55s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="14 -10;0 0" keyTimes="0;1" calcMode="spline" keySplines="0.16 0.84 0.24 1" dur="0.6s" begin="1.55s" fill="freeze"/>
+</rect>
+</g>
+<rect x="148" y="163" height="2.5" rx="1.25" fill="url(#title)" width="0"><animate attributeName="width" values="0;585" dur="0.7s" begin="1.0s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/></rect>
+<g mask="url(#tmask)"><rect x="0" y="88" width="150" height="75" fill="url(#shine)" opacity="0.9"><animate attributeName="x" values="-12;753" dur="2.4s" begin="2.3s;ts.end+2.6s" id="ts" fill="freeze"/></rect></g>
+<text x="440" y="193" text-anchor="middle" font-size="14" letter-spacing="3" fill="#8aa0d8" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.8s" begin="1.9s" fill="freeze"/>KHO SKILL CLAUDE CODE CÁ NHÂN</text>
+<g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.6s" begin="2.4s" fill="freeze"/>
+<text x="322" y="221" font-size="13" fill="#3ad07a">▸</text>
+<text x="340" y="221" font-size="13" fill="#aab8e0">/plugin install </text>
+<text x="448" y="221" font-size="13" fill="#ffae3d">luuvanskill</text>
+<rect x="538" y="210" width="8" height="14" fill="#2de6ff"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" begin="2.8s" repeatCount="indefinite"/></rect>
+</g>
+</svg>

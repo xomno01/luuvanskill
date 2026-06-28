@@ -1,60 +1,104 @@
-# luuvanskill — Bộ skill Claude Code cá nhân
+<div align="center">
 
-Backup + đồng bộ nhiều máy cho toàn bộ skill tự dùng của **xomno01**.
-Repo này vừa là **kho lưu trữ** vừa là **Claude Code marketplace + plugin** cài lại được.
+<img src="assets/hero.svg" alt="luuvanskill — kho skill Claude Code cá nhân" />
 
-## Có gì bên trong
+<br/>
 
-| Skill | Loại | Tác dụng |
-|---|---|---|
-| **ecc** | Tự tạo | Hub điều phối 271 engineering patterns, route theo domain (automation/frontend/backend/devops/game/quality/patterns) cho project của anh |
-| **source-driven** | Tự tạo | Chống AI bịa API/SDK bên thứ 3 — verify từ doc chính thức trước khi code (Firebase v8/v9, Playwright, Telegram, mail.tm, SMM, Electron Builder, OpenAI/Anthropic) |
-| **risk-first** | Tự tạo | Build feature mới theo lối làm mẩu rủi ro nhất trước + vertical slice + save point |
-| **trace-log** | Tự tạo | Structured JSON log + correlation ID cho hệ chạy song song (AM Proxy, bot worker pool) |
-| **baoyu-design** | Tải về | Tạo UI mockup/prototype/slide deck HTML |
-| **cinematic-3d-web** | Tải về | Three.js/WebGL site cinematic kiểu awwwards |
-| **deep-research** | Tải về | Deep research đa nguồn có verify + cite |
+![Claude Code](https://img.shields.io/badge/Claude_Code-plugin_%2B_marketplace-7C5CFF?style=for-the-badge&logo=anthropic&logoColor=white)
+![Skills](https://img.shields.io/badge/skills-7-21E6FF?style=for-the-badge)
+![Private](https://img.shields.io/badge/repo-private-FF4D8D?style=for-the-badge)
+![Author](https://img.shields.io/badge/by-xomno01-FFAE3D?style=for-the-badge)
 
-Kèm `reference/working-discipline.md` — 11 nguyên tắc làm việc để dán vào `CLAUDE.md` trên máy mới.
+**Bộ skill engineering cá nhân — backup &amp; đồng bộ nhiều máy.**
+Một repo vừa là **kho lưu trữ**, vừa là **Claude Code marketplace + plugin** cài lại được trong 2 lệnh.
 
-## Cài trên máy mới (2 lệnh trong Claude Code)
+<img src="assets/divider.svg" alt="" />
 
-```
-/plugin marketplace add xomno01/luuvanskill
-/plugin install luuvanskill
-```
+</div>
 
-Sau đó `/reload-plugins`. Skill sẽ xuất hiện dưới namespace `/luuvanskill:<tên>` (vd `/luuvanskill:ecc`, `/luuvanskill:source-driven`).
+## ⚡ Có gì bên trong
 
-> **Lưu ý namespace:** khi cài qua plugin, tên skill bị thêm tiền tố `luuvanskill:`. Phần **auto-invoke vẫn chạy y hệt** (Claude tự gọi theo `description`), chỉ khác khi gõ tay. Nếu muốn tên ngắn (`/ecc`), copy thẳng thư mục `skills/<tên>` vào `~/.claude/skills/` thay vì cài plugin.
+> 🛠️ **Skill tự tạo** — chế riêng cho phong cách dev của mình: automation, Electron, proxy, game tu tiên, Firebase.
 
-## Cập nhật
+| | Skill | Tác dụng |
+|:--:|:--|:--|
+| 🧭 | **ecc** | Hub điều phối 271 engineering pattern, tự route theo domain (automation / frontend / backend / devops / game / quality / patterns) |
+| 📚 | **source-driven** | Chống AI bịa API/SDK bên thứ 3 — verify từ doc chính thức trước khi code (Firebase v8/v9, Playwright, Telegram, mail.tm, SMM, Electron Builder, OpenAI/Anthropic) |
+| 🎯 | **risk-first** | Build feature mới: làm mẩu **rủi ro nhất trước** + vertical slice + save point |
+| 🔎 | **trace-log** | Structured JSON log + correlation ID cho hệ chạy song song (AM Proxy, bot worker pool) |
 
-Sửa skill ở máy chính → commit → push. Máy khác chạy:
-```
-/plugin marketplace update
-/plugin update luuvanskill
-```
+> 🎨 **Skill tải về** — đồ hay của cộng đồng, gom chung cho tiện sync.
 
-## Đồng bộ thủ công (không qua plugin, giữ tên ngắn)
+| | Skill | Tác dụng |
+|:--:|:--|:--|
+| 🖼️ | **baoyu-design** | Tạo UI mockup / prototype / slide deck HTML |
+| 🌌 | **cinematic-3d-web** | Three.js / WebGL site cinematic kiểu *awwwards* |
+| 🔬 | **deep-research** | Deep research đa nguồn, có verify + cite |
+
+📌 Kèm [`reference/working-discipline.md`](reference/working-discipline.md) — **11 nguyên tắc làm việc** để dán vào `CLAUDE.md` trên máy mới.
+
+<img src="assets/divider.svg" alt="" />
+
+## 📥 Cài trên máy mới
+
+**Cách 1 — Plugin (chuẩn Claude Code, gọn nhất):**
 
 ```bash
-# máy mới
+/plugin marketplace add xomno01/luuvanskill
+/plugin install luuvanskill
+/reload-plugins
+```
+
+Skill xuất hiện dưới namespace `/luuvanskill:<tên>` — ví dụ `/luuvanskill:ecc`, `/luuvanskill:source-driven`.
+
+> 💡 **Auto-invoke vẫn chạy y hệt:** Claude tự gọi skill theo `description`, không cần gõ tay. Namespace chỉ ảnh hưởng khi gọi thủ công.
+
+**Cách 2 — Copy thủ công (giữ tên ngắn `/ecc`):**
+
+```bash
 git clone https://github.com/xomno01/luuvanskill.git
 cp -r luuvanskill/skills/* ~/.claude/skills/
 ```
 
-## Cấu trúc repo
+<img src="assets/divider.svg" alt="" />
 
+## 🔄 Đồng bộ &amp; cập nhật
+
+```bash
+# Máy chính: sửa skill rồi đẩy lên
+git commit -am "update skill" && git push
+
+# Máy khác: kéo bản mới
+/plugin marketplace update
+/plugin update luuvanskill
 ```
+
+## 🧭 11 nguyên tắc làm việc
+
+Lọc từ bộ [`addyosmani/agent-skills`](https://github.com/addyosmani/agent-skills) cho **dev solo** — bỏ nghi thức team enterprise.
+Nêu giả định trước khi code · scope discipline · risk-first · verify API bên thứ 3 · prove-it bug · validate input · save point · refactor an toàn · secrets vào `.env` · structured log · ADR-lite.
+
+→ Chi tiết: [`reference/working-discipline.md`](reference/working-discipline.md)
+
+## 🗂️ Cấu trúc repo
+
+```text
 luuvanskill/
 ├── .claude-plugin/
 │   ├── plugin.json        # manifest plugin
 │   └── marketplace.json   # catalog marketplace (source ./)
 ├── skills/                # 7 skill, mỗi cái 1 thư mục có SKILL.md
+│   ├── ecc/  source-driven/  risk-first/  trace-log/
+│   └── baoyu-design/  cinematic-3d-web/  deep-research/
 ├── reference/
 │   └── working-discipline.md
-└── README.md
+└── assets/                # hero.svg + divider.svg (pixel-art animation)
 ```
 
-Private repo — chỉ để backup cá nhân, không phát hành công khai.
+<div align="center">
+
+<img src="assets/divider.svg" alt="" />
+
+<sub>🔒 Private repo · backup cá nhân, không phát hành công khai · made with <b>Claude Code</b> + pixel ✦</sub>
+
+</div>
