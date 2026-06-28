@@ -1,0 +1,16 @@
+# Archive backups (skill gốc đã nằm trong repo, không cần nén)
+*.zip
+*.rar
+*.7z
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+
+# Node (phòng khi skill nào thêm dependency)
+node_modules/

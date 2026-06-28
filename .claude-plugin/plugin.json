@@ -1,0 +1,11 @@
+{
+  "name": "luuvanskill",
+  "description": "Bộ skill engineering cá nhân của xomno01 — ecc hub (271 patterns) + source-driven/risk-first/trace-log (tự tạo cho automation, Electron, proxy, game tu tiên, Firebase) + baoyu-design, cinematic-3d-web, deep-research.",
+  "version": "1.0.0",
+  "author": {
+    "name": "xomno01"
+  },
+  "homepage": "https://github.com/xomno01/luuvanskill",
+  "repository": "https://github.com/xomno01/luuvanskill",
+  "license": "UNLICENSED"
+}

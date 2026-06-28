@@ -1,0 +1,18 @@
+{
+  "name": "luuvanskill",
+  "metadata": {
+    "description": "Bộ skill Claude Code cá nhân của xomno01 — backup + đồng bộ nhiều máy.",
+    "version": "1.0.0"
+  },
+  "owner": {
+    "name": "xomno01"
+  },
+  "plugins": [
+    {
+      "name": "luuvanskill",
+      "source": "./",
+      "description": "Bộ skill engineering cá nhân: ecc hub, source-driven (chống bịa API), risk-first (build mẩu khó trước), trace-log (structured log) + baoyu-design, cinematic-3d-web, deep-research.",
+      "version": "1.0.0"
+    }
+  ]
+}
