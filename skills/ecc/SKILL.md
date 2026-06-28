@@ -40,3 +40,15 @@ Anh gọi `/ecc` để tôi đọc đúng domain-file và áp dụng methodology
 6. **Fail loud** — Mọi catch block phải log hoặc re-throw, không nuốt lỗi im lặng.
 7. **200–400 lines/file** — Nếu file > 400 dòng, split ngay.
 8. **Answer from code, not memory** — Mọi claim về codebase phải có file path hoặc line number.
+
+## Skill đồng hành (tự kích hoạt, không cần gọi tay)
+
+Ngoài ECC, 3 skill chuyên biệt dưới đây TỰ chạy khi khớp ngữ cảnh. Khi route task, ưu tiên chúng cho đúng việc:
+
+| Tình huống | Skill bắn tự động |
+|---|---|
+| Đụng SDK/API bên thứ 3 (Firebase v8/v9, Playwright, Telegram, mail.tm, SMM, Electron Builder, OpenAI/Anthropic) → verify doc, đừng bịa method/param | `source-driven` |
+| Build feature mới nhiều mảnh có chỗ chưa chắc khả thi (AM Proxy bridge, relogin Hotmail, anti-bot, worker pool, gameplay tu tiên) → làm mẩu rủi ro nhất trước | `risk-first` |
+| Viết/debug hệ chạy song song nhiều bước (AM Proxy forward, bot worker pool nhiều account, luồng OTP) → structured log + correlation ID | `trace-log` |
+
+> Cả 3 nằm trong bộ `luuvanskill` (github private xomno01/luuvanskill) cùng với chính `ecc`. Xem thêm 11 NGUYÊN TẮC LÀM VIỆC trong `CLAUDE.md`.
