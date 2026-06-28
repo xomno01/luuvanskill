@@ -5,7 +5,7 @@
 <br/>
 
 ![Claude Code](https://img.shields.io/badge/Claude_Code-plugin_%2B_marketplace-7C5CFF?style=for-the-badge&logo=anthropic&logoColor=white)
-![Skills](https://img.shields.io/badge/skills-7-21E6FF?style=for-the-badge)
+![Skills](https://img.shields.io/badge/skills-8-21E6FF?style=for-the-badge)
 ![Private](https://img.shields.io/badge/repo-private-FF4D8D?style=for-the-badge)
 ![Author](https://img.shields.io/badge/by-xomno01-FFAE3D?style=for-the-badge)
 
@@ -26,6 +26,7 @@ Một repo vừa là **kho lưu trữ**, vừa là **Claude Code marketplace + p
 | 📚 | **source-driven** | Chống AI bịa API/SDK bên thứ 3 — verify từ doc chính thức trước khi code (Firebase v8/v9, Playwright, Telegram, mail.tm, SMM, Electron Builder, OpenAI/Anthropic) |
 | 🎯 | **risk-first** | Build feature mới: làm mẩu **rủi ro nhất trước** + vertical slice + save point |
 | 🔎 | **trace-log** | Structured JSON log + correlation ID cho hệ chạy song song (AM Proxy, bot worker pool) |
+| 🌐 | **IMOL2o** | Dựng website **đỉnh cao &amp; đẹp chuẩn 2026** — thẩm mỹ (bento/aurora/OKLCH), stack frontend (Astro/Next/SvelteKit), cinematic 3D/WebGPU, motion, AI workflow (checklist + 5 references) |
 
 > 🎨 **Skill tải về** — đồ hay của cộng đồng, gom chung cho tiện sync.
 
@@ -87,8 +88,8 @@ luuvanskill/
 ├── .claude-plugin/
 │   ├── plugin.json        # manifest plugin
 │   └── marketplace.json   # catalog marketplace (source ./)
-├── skills/                # 7 skill, mỗi cái 1 thư mục có SKILL.md
-│   ├── ecc/  source-driven/  risk-first/  trace-log/
+├── skills/                # 8 skill, mỗi cái 1 thư mục có SKILL.md
+│   ├── ecc/  source-driven/  risk-first/  trace-log/  IMOL2o/
 │   └── baoyu-design/  cinematic-3d-web/  deep-research/
 ├── reference/
 │   └── working-discipline.md
