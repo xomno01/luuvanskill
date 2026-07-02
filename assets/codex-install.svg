@@ -1,91 +1,311 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 240" width="860" height="240" font-family="ui-monospace,Menlo,Consolas,monospace" role="img" aria-label="Codex CLI install">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 265" width="880" height="265" font-family="ui-monospace,Menlo,Consolas,monospace" role="img" aria-label="Codex CLI install">
 <defs>
-  <radialGradient id="xbg" cx="50%" cy="35%" r="72%"><stop offset="0" stop-color="#0e1a35"/><stop offset="1" stop-color="#060a14"/></radialGradient>
-  <linearGradient id="xbar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FF4D8D"/><stop offset="0.5" stop-color="#ffae3d"/><stop offset="1" stop-color="#FF4D8D"/></linearGradient>
-  <filter id="xglow"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-  <linearGradient id="xshine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <radialGradient id="xbg" cx="70%" cy="20%" r="90%"><stop offset="0" stop-color="#1a0e30"/><stop offset="0.5" stop-color="#0c0818"/><stop offset="1" stop-color="#04030b"/></radialGradient>
+  <linearGradient id="xtitle-grad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FF4D8D"/><stop offset="0.35" stop-color="#ffae3d"/><stop offset="0.7" stop-color="#ff6b35"/><stop offset="1" stop-color="#FF4D8D"/></linearGradient>
+  <linearGradient id="xprog-grad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FF4D8D"/><stop offset="0.33" stop-color="#ffae3d"/><stop offset="0.66" stop-color="#ff6b35"/><stop offset="1" stop-color="#FF4D8D"/></linearGradient>
+  <linearGradient id="xscan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffae3d" stop-opacity="0"/><stop offset="0.5" stop-color="#ffae3d" stop-opacity="0.12"/><stop offset="1" stop-color="#ffae3d" stop-opacity="0"/></linearGradient>
+  <linearGradient id="xterm-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#100818"/><stop offset="1" stop-color="#070510"/></linearGradient>
+  <filter id="xglow-sm"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="xglow-md"><feGaussianBlur stdDeviation="4.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="xglow-lg"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
 </defs>
 
 <!-- Background -->
-<rect width="860" height="240" rx="12" fill="url(#xbg)" stroke="#2a1a40"/>
+<rect width="880" height="265" rx="14" fill="url(#xbg)"/>
 
-<!-- Title bar -->
-<rect width="860" height="34" rx="12" fill="#0c1020"/>
-<rect y="12" width="860" height="22" fill="#0c1020"/>
-<circle cx="20" cy="17" r="5" fill="#ff5f56"/>
-<circle cx="38" cy="17" r="5" fill="#febc2e"/>
-<circle cx="56" cy="17" r="5" fill="#28c840"/>
-<text x="70" y="22" font-size="11.5" fill="#4a3a60">~/.agents/skills — Codex CLI Setup</text>
-
-<!-- Animated sparkle dots -->
-<g fill="#FF4D8D">
-  <circle cx="800" cy="60" r="1.5"><animate attributeName="opacity" values="0.1;0.8;0.1" dur="2.3s" begin="0.2s" repeatCount="indefinite"/></circle>
-  <circle cx="830" cy="110" r="1"><animate attributeName="opacity" values="0.1;0.7;0.1" dur="1.8s" begin="0.7s" repeatCount="indefinite"/></circle>
-  <circle cx="845" cy="80" r="1.5"><animate attributeName="opacity" values="0.1;0.9;0.1" dur="2.7s" begin="1.2s" repeatCount="indefinite"/></circle>
-  <circle cx="25" cy="80" r="1"><animate attributeName="opacity" values="0.1;0.6;0.1" dur="2s" begin="0.4s" repeatCount="indefinite"/></circle>
-  <circle cx="40" cy="155" r="1.5"><animate attributeName="opacity" values="0.1;0.8;0.1" dur="3s" begin="0.9s" repeatCount="indefinite"/></circle>
-</g>
-<g fill="#ffae3d">
-  <circle cx="815" cy="170" r="1"><animate attributeName="opacity" values="0.1;0.7;0.1" dur="2.5s" begin="1.4s" repeatCount="indefinite"/></circle>
-  <circle cx="28" cy="200" r="1.5"><animate attributeName="opacity" values="0.1;0.6;0.1" dur="1.9s" begin="0.6s" repeatCount="indefinite"/></circle>
-  <circle cx="848" cy="210" r="1"><animate attributeName="opacity" values="0.1;0.8;0.1" dur="2.2s" begin="0.3s" repeatCount="indefinite"/></circle>
+<!-- Subtle grid -->
+<g stroke="#0d0818" stroke-width="0.5" opacity="0.7">
+  <line x1="0" y1="88" x2="880" y2="88"/><line x1="0" y1="176" x2="880" y2="176"/>
+  <line x1="176" y1="35" x2="176" y2="258"/><line x1="352" y1="35" x2="352" y2="258"/>
+  <line x1="528" y1="35" x2="528" y2="258"/><line x1="704" y1="35" x2="704" y2="258"/>
 </g>
 
-<!-- Section heading -->
-<g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.2s" fill="freeze"/>
-  <text x="40" y="62" font-size="13" fill="#FF4D8D" filter="url(#xglow)" font-weight="bold">◆ OPENAI CODEX CLI</text>
-  <text x="205" y="62" font-size="11" fill="#3a3060">— install.sh + codex-isolated.bat</text>
+<!-- Animated neon border -->
+<rect x="1.5" y="1.5" width="877" height="262" rx="13" fill="none" stroke="url(#xtitle-grad)" stroke-width="1.8" stroke-dasharray="2310" stroke-dashoffset="2310" opacity="0.9">
+  <animate attributeName="stroke-dashoffset" values="2310;0" dur="2.5s" begin="0.1s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+</rect>
+<rect x="3" y="3" width="874" height="259" rx="12" fill="none" stroke="#FF4D8D" stroke-width="0.5" opacity="0">
+  <animate attributeName="opacity" values="0;0.12" dur="1s" begin="2s" fill="freeze"/>
+</rect>
+
+<!-- Scan beam — vertical sweep -->
+<rect x="36" y="-80" width="808" height="80" fill="url(#xscan)" opacity="0">
+  <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.08;1" dur="6s" begin="3.8s" repeatCount="indefinite"/>
+  <animateTransform attributeName="transform" type="translate" values="0,-80;0,360" dur="6s" begin="3.8s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1" keyTimes="0;1"/>
+</rect>
+
+<!-- ========================================================== -->
+<!-- PARTICLES — 28 floaters, warm palette -->
+<!-- ========================================================== -->
+<!-- Pink -->
+<circle cx="75" cy="62" r="2.5" fill="#FF4D8D" filter="url(#xglow-sm)"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.6s" begin="0s" repeatCount="indefinite"/><animate attributeName="r" values="2.5;4;2.5" dur="2.6s" begin="0s" repeatCount="indefinite"/></circle>
+<circle cx="188" cy="120" r="1.2" fill="#FF4D8D"><animate attributeName="opacity" values="0.1;0.8;0.1" dur="3.2s" begin="0.5s" repeatCount="indefinite"/></circle>
+<circle cx="325" cy="56" r="2" fill="#FF4D8D" filter="url(#xglow-sm)"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.0s" begin="0.9s" repeatCount="indefinite"/></circle>
+<circle cx="410" cy="205" r="1.5" fill="#FF4D8D"><animate attributeName="opacity" values="0.1;0.7;0.1" dur="3.7s" begin="1.4s" repeatCount="indefinite"/></circle>
+<circle cx="820" cy="112" r="1" fill="#FF4D8D"><animate attributeName="opacity" values="0.1;0.7;0.1" dur="2.8s" begin="0.2s" repeatCount="indefinite"/></circle>
+<circle cx="858" cy="195" r="2" fill="#FF4D8D" filter="url(#xglow-sm)"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.3s" begin="1.0s" repeatCount="indefinite"/></circle>
+<!-- Orange/gold -->
+<circle cx="140" cy="195" r="2.5" fill="#ffae3d" filter="url(#xglow-sm)"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.9s" begin="0.3s" repeatCount="indefinite"/><animate attributeName="r" values="2.5;4;2.5" dur="2.9s" begin="0.3s" repeatCount="indefinite"/></circle>
+<circle cx="268" cy="148" r="1.2" fill="#ffae3d"><animate attributeName="opacity" values="0.1;0.75;0.1" dur="3.4s" begin="0.8s" repeatCount="indefinite"/></circle>
+<circle cx="380" cy="240" r="1.8" fill="#ffae3d"><animate attributeName="opacity" values="0.1;0.8;0.1" dur="2.2s" begin="1.2s" repeatCount="indefinite"/></circle>
+<circle cx="550" cy="50" r="2.5" fill="#ffae3d" filter="url(#xglow-sm)"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.6s" begin="0.6s" repeatCount="indefinite"/></circle>
+<circle cx="680" cy="222" r="1.5" fill="#ffae3d"><animate attributeName="opacity" values="0.1;0.7;0.1" dur="2.5s" begin="1.6s" repeatCount="indefinite"/></circle>
+<circle cx="825" cy="165" r="1" fill="#ffae3d"><animate attributeName="opacity" values="0.1;0.65;0.1" dur="3.1s" begin="0.7s" repeatCount="indefinite"/></circle>
+<!-- Red-purple -->
+<circle cx="50" cy="162" r="2" fill="#ff6b35" filter="url(#xglow-sm)"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="3.0s" begin="1.1s" repeatCount="indefinite"/></circle>
+<circle cx="200" cy="248" r="1.5" fill="#ff6b35"><animate attributeName="opacity" values="0.1;0.7;0.1" dur="2.3s" begin="0.7s" repeatCount="indefinite"/></circle>
+<circle cx="465" cy="158" r="1" fill="#ff6b35"><animate attributeName="opacity" values="0.1;0.85;0.1" dur="3.5s" begin="1.5s" repeatCount="indefinite"/></circle>
+<circle cx="700" cy="82" r="2.5" fill="#ff6b35" filter="url(#xglow-sm)"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.7s" begin="0.1s" repeatCount="indefinite"/><animate attributeName="r" values="2.5;3.8;2.5" dur="2.7s" begin="0.1s" repeatCount="indefinite"/></circle>
+<!-- Lavender accent -->
+<circle cx="108" cy="50" r="1.5" fill="#d45fff"><animate attributeName="opacity" values="0.1;0.8;0.1" dur="3.0s" begin="0.4s" repeatCount="indefinite"/></circle>
+<circle cx="212" cy="168" r="2" fill="#d45fff" filter="url(#xglow-sm)"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.5s" begin="1.7s" repeatCount="indefinite"/></circle>
+<circle cx="448" cy="232" r="2.5" fill="#d45fff"><animate attributeName="opacity" values="0.1;0.8;0.1" dur="2.9s" begin="0.4s" repeatCount="indefinite"/></circle>
+<circle cx="760" cy="58" r="1.5" fill="#d45fff" filter="url(#xglow-sm)"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.1s" begin="1.2s" repeatCount="indefinite"/></circle>
+<!-- Warm white sparkles -->
+<circle cx="132" cy="52" r="1" fill="#ffe0a0"><animate attributeName="opacity" values="0.1;1;0.1" dur="1.5s" begin="0.3s" repeatCount="indefinite"/></circle>
+<circle cx="455" cy="52" r="2" fill="#ffe0a0" filter="url(#xglow-sm)"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.4s" begin="1.8s" repeatCount="indefinite"/></circle>
+<circle cx="748" cy="196" r="1.5" fill="#ffe0a0"><animate attributeName="opacity" values="0.1;0.7;0.1" dur="2.2s" begin="0.6s" repeatCount="indefinite"/></circle>
+<circle cx="840" cy="248" r="1" fill="#ffe0a0"><animate attributeName="opacity" values="0.1;0.9;0.1" dur="3.0s" begin="1.3s" repeatCount="indefinite"/></circle>
+<circle cx="860" cy="78" r="1.5" fill="#ffe0a0"><animate attributeName="opacity" values="0.1;0.8;0.1" dur="2.4s" begin="0.9s" repeatCount="indefinite"/></circle>
+<circle cx="22" cy="82" r="1" fill="#ffe0a0"><animate attributeName="opacity" values="0.1;0.7;0.1" dur="3.2s" begin="1.4s" repeatCount="indefinite"/></circle>
+<circle cx="35" cy="240" r="2" fill="#ffe0a0" filter="url(#xglow-sm)"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.6s" begin="0.8s" repeatCount="indefinite"/></circle>
+
+<!-- ========================================================== -->
+<!-- TITLE BAR -->
+<!-- ========================================================== -->
+<rect width="880" height="36" rx="14" fill="#07030f"/>
+<rect y="22" width="880" height="14" fill="#07030f"/>
+<line x1="0" y1="36" x2="880" y2="36" stroke="#1a0d28"/>
+<rect x="0" y="35.5" width="0" height="1" rx="0.5" fill="url(#xtitle-grad)" opacity="0.9">
+  <animate attributeName="width" values="0;880" dur="1.4s" begin="0.9s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0;1"/>
+</rect>
+<g filter="url(#xglow-sm)">
+  <circle cx="22" cy="18" r="5.5" fill="#ff5f56"/>
+  <circle cx="42" cy="18" r="5.5" fill="#febc2e"/>
+  <circle cx="62" cy="18" r="5.5" fill="#28c840"/>
+</g>
+<text x="78" y="23" font-size="12" fill="url(#xtitle-grad)" font-weight="bold" filter="url(#xglow-sm)" opacity="0">
+  <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.6s" fill="freeze"/>
+  Codex CLI
+</text>
+<text x="148" y="23" font-size="11.5" fill="#3a2550" opacity="0">
+  <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.8s" fill="freeze"/>
+   — ~/.agents/skills + codex-isolated.bat
+</text>
+
+<!-- ========================================================== -->
+<!-- LEFT PANEL: INSTALL (x 20–428) -->
+<!-- ========================================================== -->
+
+<g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/>
+  <text x="20" y="54" font-size="9.5" fill="#FF4D8D" letter-spacing="3" font-weight="bold" filter="url(#xglow-sm)">INSTALL</text>
+  <line x1="20" y1="58" x2="428" y2="58" stroke="#2a1040" stroke-width="0.8"/>
 </g>
 
-<!-- Step 1: Clone + install.sh -->
-<g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.7s" fill="freeze"/>
-  <text x="40" y="84" font-size="12" fill="#5a4080">Bước 1 — Cài 13 skills (1 lệnh)</text>
+<!-- Install label -->
+<g opacity="0" transform="translate(0,10)">
+  <animate attributeName="opacity" values="0;1" dur="0.35s" begin="1.1s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" values="0,10;0,0" dur="0.35s" begin="1.1s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0;1"/>
+  <text x="20" y="75" font-size="10.5" fill="#3a2550">Cài 13 skills bằng 1 lệnh</text>
 </g>
-<g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.1s" fill="freeze"/>
-  <text x="40" y="103" font-size="12" fill="#21b55e">▸</text>
-  <text x="56" y="103" font-size="12" fill="#c8b0e8">git clone https://github.com/xomno01/luuvanskill.git</text>
-</g>
-<g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.5s" fill="freeze"/>
-  <text x="40" y="120" font-size="12" fill="#21b55e">▸</text>
-  <text x="56" y="120" font-size="12" fill="#c8b0e8">bash luuvanskill/codex/install.sh</text>
-</g>
-
-<!-- Output lines -->
-<g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.0s" fill="freeze"/>
-  <text x="56" y="136" font-size="11" fill="#3a8a5a">[OK] ~/.codex/AGENTS.md</text>
-</g>
-<g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.3s" fill="freeze"/>
-  <text x="56" y="150" font-size="11" fill="#3a8a5a">[OK] ~/.agents/skills/ecc/SKILL.md  [OK] ~/.agents/skills/senior-dev  ...</text>
-</g>
-<g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="2.6s" fill="freeze"/>
-  <text x="56" y="164" font-size="11" fill="#ffae3d">Done! 13 skills installed. Invoke with: $skill-name</text>
+<g opacity="0" transform="translate(0,10)">
+  <animate attributeName="opacity" values="0;1" dur="0.35s" begin="1.35s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" values="0,10;0,0" dur="0.35s" begin="1.35s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0;1"/>
+  <text x="20" y="92" font-size="12" fill="#e85a8c">▸</text>
+  <text x="35" y="92" font-size="12" fill="#c0a0e0">bash luuvanskill/codex/</text>
+  <text x="208" y="92" font-size="12" fill="#ffae3d" filter="url(#xglow-sm)">install.sh</text>
 </g>
 
-<!-- Step 2: Parallel bug + isolated -->
-<g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="3.0s" fill="freeze"/>
-  <text x="40" y="183" font-size="12" fill="#5a4080">Bước 2 — Mở nhiều project cùng lúc (không conflict)</text>
+<!-- Output lines appearing with green color -->
+<g opacity="0" transform="translate(0,8)">
+  <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.7s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" values="0,8;0,0" dur="0.3s" begin="1.7s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0;1"/>
+  <text x="20" y="109" font-size="11.5" fill="#28a860">[OK] ~/.codex/AGENTS.md</text>
 </g>
-<g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="3.4s" fill="freeze"/>
-  <text x="40" y="200" font-size="12" fill="#21b55e">▸</text>
-  <text x="56" y="200" font-size="12" fill="#c8b0e8">codex-isolated.bat</text>
-  <text x="190" y="200" font-size="12" fill="#6a5090">  ← mỗi project 1 CODEX_HOME riêng, không leak state</text>
+<g opacity="0" transform="translate(0,8)">
+  <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.0s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" values="0,8;0,0" dur="0.3s" begin="2.0s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0;1"/>
+  <text x="20" y="125" font-size="11.5" fill="#28a860">[OK] ~/.agents/skills/ecc · source-driven</text>
 </g>
-<g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="3.8s" fill="freeze"/>
-  <text x="40" y="217" font-size="12" fill="#21b55e">▸</text>
-  <text x="56" y="217" font-size="12" fill="#c8b0e8">$ecc</text>
-  <text x="90" y="217" font-size="12" fill="#6a5090">  | </text>
-  <text x="108" y="217" font-size="12" fill="#c8b0e8">$senior-dev</text>
-  <text x="208" y="217" font-size="12" fill="#6a5090">  | </text>
-  <text x="226" y="217" font-size="12" fill="#c8b0e8">$debugger</text>
-  <text x="316" y="217" font-size="12" fill="#6a5090">  ← auto-invoke, không cần gõ</text>
-  <!-- blinking cursor -->
-  <rect x="327" y="205" width="7" height="13" fill="#FF4D8D">
-    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" begin="4.2s" repeatCount="indefinite"/>
+<g opacity="0" transform="translate(0,8)">
+  <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.2s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" values="0,8;0,0" dur="0.3s" begin="2.2s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0;1"/>
+  <text x="20" y="141" font-size="11.5" fill="#28a860">[OK] risk-first · trace-log · architect</text>
+</g>
+<g opacity="0" transform="translate(0,8)">
+  <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.4s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" values="0,8;0,0" dur="0.3s" begin="2.4s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0;1"/>
+  <text x="20" y="157" font-size="11.5" fill="#28a860">[OK] senior-dev · debugger · researcher ···</text>
+</g>
+
+<!-- Done! line with glow -->
+<g opacity="0" transform="translate(0,12)">
+  <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.7s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" values="0,12;0,0" dur="0.5s" begin="2.7s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0;1"/>
+  <rect x="15" y="168" width="410" height="20" rx="6" fill="#ffae3d" opacity="0.06"/>
+  <text x="20" y="183" font-size="12.5" fill="#ffae3d" filter="url(#xglow-md)">Done! 13 skills installed.</text>
+</g>
+
+<!-- Invoke section -->
+<g opacity="0" transform="translate(0,10)">
+  <animate attributeName="opacity" values="0;1" dur="0.4s" begin="3.1s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" values="0,10;0,0" dur="0.4s" begin="3.1s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0;1"/>
+  <line x1="20" y1="196" x2="428" y2="196" stroke="#2a1040" stroke-width="0.8" stroke-dasharray="4,4"/>
+  <text x="20" y="210" font-size="10.5" fill="#3a2550">Gọi thủ công:</text>
+  <text x="20" y="227" font-size="12" fill="#e85a8c">▸</text>
+  <text x="35" y="227" font-size="12" fill="#FF4D8D" filter="url(#xglow-sm)">$ecc</text>
+  <text x="70" y="227" font-size="12" fill="#5a3a70">  |  </text>
+  <text x="96" y="227" font-size="12" fill="#FF4D8D" filter="url(#xglow-sm)">$senior-dev</text>
+  <text x="196" y="227" font-size="12" fill="#5a3a70">  |  </text>
+  <text x="222" y="227" font-size="12" fill="#FF4D8D" filter="url(#xglow-sm)">$debugger</text>
+  <text x="306" y="227" font-size="12" fill="#5a3a70">  |  </text>
+  <text x="332" y="227" font-size="12" fill="#FF4D8D" filter="url(#xglow-sm)">$researcher</text>
+</g>
+
+<!-- Cursor -->
+<rect x="20" y="238" width="7" height="13" rx="1" fill="#FF4D8D" opacity="0">
+  <animate attributeName="opacity" values="0;1" dur="0.1s" begin="3.5s" fill="freeze"/>
+  <animate attributeName="opacity" values="1;0" dur="0.8s" begin="3.8s" repeatCount="indefinite" calcMode="discrete"/>
+</rect>
+
+<!-- ========================================================== -->
+<!-- COLUMN DIVIDER -->
+<!-- ========================================================== -->
+<line x1="450" y1="38" x2="450" y2="248" stroke="#2a1040" stroke-width="0.8" opacity="0">
+  <animate attributeName="opacity" values="0;0.7" dur="0.4s" begin="2.0s" fill="freeze"/>
+</line>
+<circle cx="450" cy="143" r="4" fill="#FF4D8D" opacity="0" filter="url(#xglow-md)">
+  <animate attributeName="opacity" values="0;0.9" dur="0.4s" begin="2.4s" fill="freeze"/>
+  <animate attributeName="r" values="4;6;4" dur="2s" begin="2.8s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.9;0.2;0.9" dur="2s" begin="2.8s" repeatCount="indefinite"/>
+</circle>
+<circle cx="450" cy="80" r="2" fill="#ffae3d" opacity="0">
+  <animate attributeName="opacity" values="0;0.5;0" dur="3s" begin="3.5s" repeatCount="indefinite"/>
+</circle>
+<circle cx="450" cy="205" r="2" fill="#d45fff" opacity="0">
+  <animate attributeName="opacity" values="0;0.5;0" dur="3s" begin="4.5s" repeatCount="indefinite"/>
+</circle>
+
+<!-- ========================================================== -->
+<!-- RIGHT PANEL: ISOLATION DEMO (x 465–862) -->
+<!-- ========================================================== -->
+
+<g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="2.2s" fill="freeze"/>
+  <text x="465" y="54" font-size="9.5" fill="#ffae3d" letter-spacing="3" font-weight="bold" filter="url(#xglow-sm)">PARALLEL ISOLATION</text>
+  <line x1="465" y1="58" x2="862" y2="58" stroke="#2a1040" stroke-width="0.8"/>
+</g>
+
+<!-- Subtitle -->
+<g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="2.5s" fill="freeze"/>
+  <text x="465" y="73" font-size="10.5" fill="#3a2550">codex-isolated.bat — CODEX_HOME riêng từng project</text>
+</g>
+
+<!-- -------- Mini Terminal A: project-alpha -------- -->
+<g opacity="0" transform="translate(0,14)">
+  <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.8s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" values="0,14;0,0" dur="0.5s" begin="2.8s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0;1"/>
+
+  <!-- Terminal box A -->
+  <rect x="465" y="82" width="188" height="92" rx="8" fill="url(#xterm-bg)" stroke="#3a1a55" stroke-width="1"/>
+  <!-- Animated left border accent -->
+  <rect x="465" y="82" width="2.5" height="0" rx="1.25" fill="#FF4D8D">
+    <animate attributeName="height" values="0;92" dur="0.4s" begin="3.1s" fill="freeze"/>
+  </rect>
+  <!-- Title bar A -->
+  <rect x="465" y="82" width="188" height="18" rx="8" fill="#120820"/>
+  <rect x="465" y="90" width="188" height="10" fill="#120820"/>
+  <circle cx="476" cy="91" r="3" fill="#ff5f56" filter="url(#xglow-sm)"/>
+  <circle cx="486" cy="91" r="3" fill="#febc2e" filter="url(#xglow-sm)"/>
+  <text x="498" y="95" font-size="9.5" fill="#5a3070">project-alpha/</text>
+  <!-- Content A -->
+  <text x="472" y="115" font-size="11" fill="#e85a8c" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.2s" fill="freeze"/>
+    ▸
+  </text>
+  <text x="484" y="115" font-size="11" fill="#c8a0e8" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.2s" fill="freeze"/>
+    codex-isolated.bat alpha
+  </text>
+  <text x="472" y="131" font-size="10.5" fill="#ffae3d" opacity="0" filter="url(#xglow-sm)">
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.5s" fill="freeze"/>
+    CODEX_HOME:
+  </text>
+  <text x="472" y="146" font-size="10" fill="#c8a0e8" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.5s" fill="freeze"/>
+    ...sessions/alpha/ ✓
+  </text>
+  <!-- Blinking cursor A -->
+  <rect x="472" y="155" width="6" height="10" rx="1" fill="#FF4D8D" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.1s" begin="3.8s" fill="freeze"/>
+    <animate attributeName="opacity" values="1;0" dur="0.7s" begin="4.1s" repeatCount="indefinite" calcMode="discrete"/>
   </rect>
 </g>
 
-<!-- Progress bar -->
-<rect x="38" y="228" width="0" height="2" rx="1" fill="url(#xbar)">
-  <animate attributeName="width" values="0;784" dur="4.0s" begin="0.2s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/>
+<!-- -------- Mini Terminal B: project-beta -------- -->
+<g opacity="0" transform="translate(0,14)">
+  <animate attributeName="opacity" values="0;1" dur="0.5s" begin="3.1s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" values="0,14;0,0" dur="0.5s" begin="3.1s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0;1"/>
+
+  <!-- Terminal box B -->
+  <rect x="665" y="82" width="193" height="92" rx="8" fill="url(#xterm-bg)" stroke="#1a3055" stroke-width="1"/>
+  <!-- Animated right border accent -->
+  <rect x="855.5" y="82" width="2.5" height="0" rx="1.25" fill="#ffae3d">
+    <animate attributeName="height" values="0;92" dur="0.4s" begin="3.4s" fill="freeze"/>
+  </rect>
+  <!-- Title bar B -->
+  <rect x="665" y="82" width="193" height="18" rx="8" fill="#081020"/>
+  <rect x="665" y="90" width="193" height="10" fill="#081020"/>
+  <circle cx="676" cy="91" r="3" fill="#ff5f56" filter="url(#xglow-sm)"/>
+  <circle cx="686" cy="91" r="3" fill="#febc2e" filter="url(#xglow-sm)"/>
+  <text x="698" y="95" font-size="9.5" fill="#2a3a60">project-beta/</text>
+  <!-- Content B -->
+  <text x="672" y="115" font-size="11" fill="#e85a8c" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.5s" fill="freeze"/>
+    ▸
+  </text>
+  <text x="684" y="115" font-size="11" fill="#c8a0e8" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.5s" fill="freeze"/>
+    codex-isolated.bat beta
+  </text>
+  <text x="672" y="131" font-size="10.5" fill="#ffae3d" opacity="0" filter="url(#xglow-sm)">
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.8s" fill="freeze"/>
+    CODEX_HOME:
+  </text>
+  <text x="672" y="146" font-size="10" fill="#c8a0e8" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.8s" fill="freeze"/>
+    ...sessions/beta/ ✓
+  </text>
+  <!-- Blinking cursor B (offset timing) -->
+  <rect x="672" y="155" width="6" height="10" rx="1" fill="#ffae3d" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.1s" begin="4.1s" fill="freeze"/>
+    <animate attributeName="opacity" values="1;0" dur="0.7s" begin="4.5s" repeatCount="indefinite" calcMode="discrete"/>
+  </rect>
+</g>
+
+<!-- "No conflict" success banner -->
+<g opacity="0" transform="translate(0,12)">
+  <animate attributeName="opacity" values="0;1" dur="0.6s" begin="4.2s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" values="0,12;0,0" dur="0.6s" begin="4.2s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0;1"/>
+  <rect x="465" y="192" width="390" height="22" rx="8" fill="#28a860" opacity="0.1" stroke="#28a860" stroke-width="0.7"/>
+  <text x="485" y="207" font-size="12" fill="#34cc78" filter="url(#xglow-sm)">✓  2 sessions — 0 conflict — ~/.agents/skills/ shared (read-only)</text>
+</g>
+
+<!-- Skills reminder -->
+<g opacity="0">
+  <animate attributeName="opacity" values="0;1" dur="0.5s" begin="4.8s" fill="freeze"/>
+  <text x="465" y="235" font-size="10.5" fill="#3a2550" font-style="italic">Skills: $ecc · $automation-engineer · $senior-dev · $code-reviewer ···</text>
+</g>
+
+<!-- ========================================================== -->
+<!-- BOTTOM PROGRESS BAR -->
+<!-- ========================================================== -->
+<rect x="20" y="257" width="840" height="2.5" rx="1.25" fill="#0d0818"/>
+<rect x="20" y="257" width="0" height="2.5" rx="1.25" fill="url(#xprog-grad)">
+  <animate attributeName="width" values="0;840" dur="4.8s" begin="0.3s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
 </rect>
+<rect x="20" y="257" width="30" height="2.5" rx="1.25" fill="#ffffff" opacity="0">
+  <animate attributeName="opacity" values="0;0.7;0" keyTimes="0;0.08;1" dur="4.8s" begin="0.3s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" values="0,0;810,0" dur="4.8s" begin="0.3s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+</rect>
+
 </svg>
