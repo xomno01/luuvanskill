@@ -60,6 +60,8 @@ Một repo vừa là **kho lưu trữ**, vừa là **Claude Code marketplace + p
 
 ## 📥 Cài trên máy mới
 
+### Claude Code
+
 **Cách 1 — Plugin (chuẩn Claude Code, gọn nhất):**
 
 ```bash
@@ -79,6 +81,21 @@ git clone https://github.com/xomno01/luuvanskill.git
 cp -r luuvanskill/skills/* ~/.claude/skills/
 cp -r luuvanskill/agents/* ~/.claude/agents/
 ```
+
+### OpenAI Codex CLI
+
+```bash
+git clone https://github.com/xomno01/luuvanskill.git
+bash luuvanskill/codex/install.sh
+```
+
+Script tự copy:
+- `codex/AGENTS.md` → `~/.codex/AGENTS.md` (global instructions, tương đương `CLAUDE.md`)
+- `codex/skills/*/SKILL.md` → `~/.agents/skills/*/SKILL.md` (13 skills)
+
+Gọi bằng `$skill-name` — ví dụ: `$ecc`, `$senior-dev`, `$debugger`.
+
+> **Khác biệt với Claude Code:** Codex không có sub-agent directory, nên các persona (architect, senior-dev...) được port thành Codex skills. Không có `tools:` hay `model:` per-skill — model config qua Codex profiles (`codex --profile ...`).
 
 <img src="assets/divider.svg" alt="" />
 
@@ -107,14 +124,22 @@ luuvanskill/
 ├── .claude-plugin/
 │   ├── plugin.json        # manifest plugin
 │   └── marketplace.json   # catalog marketplace (source ./)
-├── skills/                # 9 skill, mỗi cái 1 thư mục có SKILL.md
+├── skills/                # 9 skill Claude Code, mỗi cái 1 thư mục có SKILL.md
 │   ├── ecc/  source-driven/  risk-first/  trace-log/  IMOL2o/
 │   ├── baoyu-design/  cinematic-3d-web/  deep-research/  create-image/
-├── agents/                # 9 sub-agent chuyên gia (copy → ~/.claude/agents/)
+├── agents/                # 9 sub-agent Claude Code (copy → ~/.claude/agents/)
 │   ├── TEAM.md            # sơ đồ team + hướng dẫn dispatch
 │   ├── architect.md  senior-dev.md  frontend-ux.md  automation-engineer.md
 │   ├── devops-builder.md  debugger.md  qa-tester.md  researcher.md
 │   └── code-reviewer.md
+├── codex/                 # OpenAI Codex CLI port
+│   ├── AGENTS.md          # global instructions (tương đương CLAUDE.md)
+│   ├── install.sh         # script cài 1 lệnh
+│   └── skills/            # 13 skills (4 core + 9 persona), gọi bằng $skill-name
+│       ├── ecc/  source-driven/  risk-first/  trace-log/
+│       ├── architect/  senior-dev/  frontend-ux/  automation-engineer/
+│       ├── devops-builder/  debugger/  qa-tester/  researcher/
+│       └── code-reviewer/
 ├── reference/
 │   ├── working-discipline.md      # 11 nguyên tắc (verbose, để tham chiếu)
 │   └── claude-md-optimization.md  # lazy-load pattern giảm 57% tokens
