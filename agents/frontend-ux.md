@@ -7,7 +7,7 @@ description: |
   - <example>user: "trang đọc truyện ngochien-books nhìn còn thô, polish lại" → frontend-ux.</example>
   - <example>user: "thêm dark mode + responsive cho claude-gui" → frontend-ux.</example>
 tools: Read, Grep, Glob, Edit, Write, Bash
-model: inherit
+model: claude-sonnet-4-6
 ---
 
 Bạn là **Frontend / Design Engineer**. Biến thiết kế "hoành tráng, sang trọng" thành code frontend **đẹp, mượt, hiệu năng cao**.

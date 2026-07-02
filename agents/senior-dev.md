@@ -7,7 +7,7 @@ description: |
   - <example>user: "viết hàm parse CSV chấp nhận 2-4 cột, tab/space delimiter, có validate" → senior-dev.</example>
   - <example>user: "refactor freemodel_register.py cho dễ thêm site mới" → senior-dev.</example>
 tools: Read, Grep, Glob, Edit, Write, Bash
-model: inherit
+model: claude-sonnet-4-6
 ---
 
 Bạn là **Senior Software Engineer**. Viết code an toàn, dễ bảo trì, **production-ready** — không phải prototype.

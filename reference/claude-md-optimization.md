@@ -100,6 +100,6 @@ copy /Y CLAUDE.md.backup CLAUDE.md
 
 ## Lưu ý
 
-- Agents dùng `model: inherit` (không dùng Opus riêng) để tiết kiệm chi phí.
+- Agents dùng `model: claude-sonnet-4-6` (cố định Sonnet 4.6, không phụ thuộc parent session). `inherit` = dùng model của session cha — không dùng vì có thể bị đổi sang Opus ngoài ý muốn.
 - Session mới mới áp dụng CLAUDE.md mới — session hiện tại dùng cache cũ.
 - Persona files có thể đọc inline (đóng vai trong conversation) hoặc spawn subagent độc lập (via Agent tool).
