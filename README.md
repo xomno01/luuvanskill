@@ -5,7 +5,8 @@
 <br/>
 
 ![Claude Code](https://img.shields.io/badge/Claude_Code-plugin_%2B_marketplace-7C5CFF?style=for-the-badge&logo=anthropic&logoColor=white)
-![Skills](https://img.shields.io/badge/skills-8-21E6FF?style=for-the-badge)
+![Skills](https://img.shields.io/badge/skills-9-21E6FF?style=for-the-badge)
+![Agents](https://img.shields.io/badge/agents-9-00D4AA?style=for-the-badge)
 ![Private](https://img.shields.io/badge/repo-private-FF4D8D?style=for-the-badge)
 ![Author](https://img.shields.io/badge/by-xomno01-FFAE3D?style=for-the-badge)
 
@@ -35,8 +36,25 @@ Một repo vừa là **kho lưu trữ**, vừa là **Claude Code marketplace + p
 | 🖼️ | **baoyu-design** | Tạo UI mockup / prototype / slide deck HTML |
 | 🌌 | **cinematic-3d-web** | Three.js / WebGL site cinematic kiểu *awwwards* |
 | 🔬 | **deep-research** | Deep research đa nguồn, có verify + cite |
+| 🖼️ | **create-image** | Tạo ảnh AI (FLUX API) hoặc programmatic (Pillow/SVG/NumPy) |
 
-📌 Kèm [`reference/working-discipline.md`](reference/working-discipline.md) — **11 nguyên tắc làm việc** để dán vào `CLAUDE.md` trên máy mới.
+> 🤖 **Sub-agents** — 9 chuyên gia chạy độc lập (context riêng, tool riêng), dùng được mọi project.
+
+| | Agent | Vai trò |
+|:--:|:--|:--|
+| 🔬 | **researcher** | Deep research đa nguồn trước khi quyết kỹ thuật |
+| 🏗️ | **architect** | Kiến trúc hệ thống, data model, trade-off |
+| 💻 | **senior-dev** | Code production-ready React/Node/Python/Electron |
+| 🎨 | **frontend-ux** | UI Tailwind, 4 trạng thái, a11y, Core Web Vitals |
+| 🤖 | **automation-engineer** | Playwright, login-bot, OTP, multi-acc, anti-bot |
+| 📦 | **devops-builder** | Electron Builder, PyInstaller, .exe, installer |
+| 🔍 | **debugger** | Root cause analysis, stack trace, không vá triệu chứng |
+| ✅ | **qa-tester** | Unit test, kịch bản manual khắt khe, regression |
+| 👁️ | **code-reviewer** | Soi bug + lộ key/token, chỉ đọc & báo cáo |
+
+📌 Kèm references:
+- [`reference/working-discipline.md`](reference/working-discipline.md) — **11 nguyên tắc làm việc** để dán vào `CLAUDE.md`
+- [`reference/claude-md-optimization.md`](reference/claude-md-optimization.md) — **Lazy-load pattern** giảm 57% input tokens/session
 
 <img src="assets/divider.svg" alt="" />
 
@@ -59,6 +77,7 @@ Skill xuất hiện dưới namespace `/luuvanskill:<tên>` — ví dụ `/luuva
 ```bash
 git clone https://github.com/xomno01/luuvanskill.git
 cp -r luuvanskill/skills/* ~/.claude/skills/
+cp -r luuvanskill/agents/* ~/.claude/agents/
 ```
 
 <img src="assets/divider.svg" alt="" />
@@ -88,11 +107,17 @@ luuvanskill/
 ├── .claude-plugin/
 │   ├── plugin.json        # manifest plugin
 │   └── marketplace.json   # catalog marketplace (source ./)
-├── skills/                # 8 skill, mỗi cái 1 thư mục có SKILL.md
+├── skills/                # 9 skill, mỗi cái 1 thư mục có SKILL.md
 │   ├── ecc/  source-driven/  risk-first/  trace-log/  IMOL2o/
-│   └── baoyu-design/  cinematic-3d-web/  deep-research/
+│   ├── baoyu-design/  cinematic-3d-web/  deep-research/  create-image/
+├── agents/                # 9 sub-agent chuyên gia (copy → ~/.claude/agents/)
+│   ├── TEAM.md            # sơ đồ team + hướng dẫn dispatch
+│   ├── architect.md  senior-dev.md  frontend-ux.md  automation-engineer.md
+│   ├── devops-builder.md  debugger.md  qa-tester.md  researcher.md
+│   └── code-reviewer.md
 ├── reference/
-│   └── working-discipline.md
+│   ├── working-discipline.md      # 11 nguyên tắc (verbose, để tham chiếu)
+│   └── claude-md-optimization.md  # lazy-load pattern giảm 57% tokens
 └── assets/                # hero.svg + divider.svg (pixel-art animation)
 ```
 
