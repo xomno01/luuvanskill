@@ -15,8 +15,15 @@ echo "=== luuvanskill Codex Install ==="
 mkdir -p "$AGENTS_DIR"
 mkdir -p "$CODEX_DIR"
 
+# Add UTF-8 BOM so Windows PowerShell reads Vietnamese correctly
+add_bom() {
+    local src="$1" dst="$2"
+    printf '\xef\xbb\xbf' > "$dst"
+    cat "$src" >> "$dst"
+}
+
 # Install AGENTS.md (global Codex instructions)
-cp "$SCRIPT_DIR/AGENTS.md" "$CODEX_DIR/AGENTS.md"
+add_bom "$SCRIPT_DIR/AGENTS.md" "$CODEX_DIR/AGENTS.md"
 echo "[OK] ~/.codex/AGENTS.md"
 
 # Install each skill
@@ -24,7 +31,7 @@ for skill_dir in "$SCRIPT_DIR/skills"/*/; do
     skill_name=$(basename "$skill_dir")
     target="$AGENTS_DIR/$skill_name"
     mkdir -p "$target"
-    cp "$skill_dir/SKILL.md" "$target/SKILL.md"
+    add_bom "$skill_dir/SKILL.md" "$target/SKILL.md"
     echo "[OK] ~/.agents/skills/$skill_name/SKILL.md"
 done
 
