@@ -5,13 +5,14 @@
 <br/>
 
 ![Claude Code](https://img.shields.io/badge/Claude_Code-plugin_%2B_marketplace-7C5CFF?style=for-the-badge&logo=anthropic&logoColor=white)
+![Codex CLI](https://img.shields.io/badge/Codex_CLI-13_skills-FF4D8D?style=for-the-badge&logo=openai&logoColor=white)
 ![Skills](https://img.shields.io/badge/skills-9-21E6FF?style=for-the-badge)
 ![Agents](https://img.shields.io/badge/agents-9-00D4AA?style=for-the-badge)
 ![Private](https://img.shields.io/badge/repo-private-FF4D8D?style=for-the-badge)
 ![Author](https://img.shields.io/badge/by-xomno01-FFAE3D?style=for-the-badge)
 
 **Bộ skill engineering cá nhân — backup &amp; đồng bộ nhiều máy.**
-Một repo vừa là **kho lưu trữ**, vừa là **Claude Code marketplace + plugin** cài lại được trong 2 lệnh.
+Một repo vừa là **kho lưu trữ**, vừa là **Claude Code marketplace + plugin** và **Codex CLI skills** — cài lại trong 2 lệnh.
 
 <img src="assets/divider.svg" alt="" />
 
@@ -27,7 +28,7 @@ Một repo vừa là **kho lưu trữ**, vừa là **Claude Code marketplace + p
 | 📚 | **source-driven** | Chống AI bịa API/SDK bên thứ 3 — verify từ doc chính thức trước khi code (Firebase v8/v9, Playwright, Telegram, mail.tm, SMM, Electron Builder, OpenAI/Anthropic) |
 | 🎯 | **risk-first** | Build feature mới: làm mẩu **rủi ro nhất trước** + vertical slice + save point |
 | 🔎 | **trace-log** | Structured JSON log + correlation ID cho hệ chạy song song (AM Proxy, bot worker pool) |
-| 🌐 | **IMOL2o** | Dựng website **đỉnh cao &amp; đẹp chuẩn 2026** — thẩm mỹ (bento/aurora/OKLCH), stack frontend (Astro/Next/SvelteKit), cinematic 3D/WebGPU, motion, AI workflow (checklist + 5 references) |
+| 🌐 | **IMOL2o** | Dựng website **đỉnh cao &amp; đẹp chuẩn 2026** — thẩm mỹ (bento/aurora/OKLCH), stack frontend (Astro/Next/SvelteKit), cinematic 3D/WebGPU, motion, AI workflow |
 
 > 🎨 **Skill tải về** — đồ hay của cộng đồng, gom chung cho tiện sync.
 
@@ -58,44 +59,201 @@ Một repo vừa là **kho lưu trữ**, vừa là **Claude Code marketplace + p
 
 <img src="assets/divider.svg" alt="" />
 
-## 📥 Cài trên máy mới
+## 🚀 Hướng dẫn cài đặt
 
-### Claude Code
+---
 
-**Cách 1 — Plugin (chuẩn Claude Code, gọn nhất):**
+### 🧠 Claude Code CLI
+
+<div align="center">
+<img src="assets/claude-install.svg" alt="Claude Code CLI — cài skill + agent, auto-invoke" />
+</div>
+
+#### Bước 1: Clone repo
 
 ```bash
+git clone https://github.com/xomno01/luuvanskill.git
+```
+
+#### Bước 2: Cài agents & skills
+
+Chọn **một trong hai cách** — cả hai đều hỗ trợ auto-invoke:
+
+**Cách A — Plugin** (namespace `/luuvanskill:*`, gọn nhất):
+
+```bash
+# Trong Claude Code CLI:
 /plugin marketplace add xomno01/luuvanskill
 /plugin install luuvanskill
 /reload-plugins
 ```
 
-Skill xuất hiện dưới namespace `/luuvanskill:<tên>` — ví dụ `/luuvanskill:ecc`, `/luuvanskill:source-driven`.
+Sau khi cài, gọi thủ công bằng `/luuvanskill:ecc`, `/luuvanskill:senior-dev`, v.v.
 
-> 💡 **Auto-invoke vẫn chạy y hệt:** Claude tự gọi skill theo `description`, không cần gõ tay. Namespace chỉ ảnh hưởng khi gọi thủ công.
-
-**Cách 2 — Copy thủ công (giữ tên ngắn `/ecc`):**
+**Cách B — Copy trực tiếp** (giữ tên ngắn `/ecc`, khuyến nghị):
 
 ```bash
-git clone https://github.com/xomno01/luuvanskill.git
-cp -r luuvanskill/skills/* ~/.claude/skills/
 cp -r luuvanskill/agents/* ~/.claude/agents/
+cp -r luuvanskill/skills/* ~/.claude/skills/
 ```
 
-### OpenAI Codex CLI
+> Skills xuất hiện ngay dưới tên gốc: `/ecc`, `/source-driven`, `/risk-first`, `/trace-log`
+
+#### Bước 3: Xác nhận
+
+```bash
+# Trong Claude Code, kiểm tra:
+/skills     # → thấy ecc, source-driven, risk-first, trace-log, ...
+/agents     # → thấy researcher, architect, senior-dev, ...
+```
+
+---
+
+#### 🤖 Auto-invoke — không cần gõ gì thêm
+
+> Claude đọc trường `description` trong mỗi `agent/*.md` → khi task của anh khớp → **tự spawn agent đúng**.
+
+| Anh nói gì | Agent tự kích hoạt |
+|:--|:--|
+| "viết Playwright login bot", "OTP Hotmail", "multi-account" | `automation-engineer` |
+| "build .exe", "Electron Builder", "PyInstaller", "installer" | `devops-builder` |
+| "React UI", "Tailwind", "dark mode", "skeleton loader", "a11y" | `frontend-ux` |
+| "Node.js API", "Firebase", "backend service", "rate limit" | `senior-dev` |
+| "review code", "tìm bug", "lộ API key", "security check" | `code-reviewer` |
+| "tại sao crash", "stack trace", "debug", "root cause" | `debugger` |
+| "thiết kế kiến trúc", "data model", "Firebase schema", "trade-off" | `architect` |
+| "viết test", "kịch bản manual", "regression check" | `qa-tester` |
+| "tìm hiểu thư viện", "compare tool", "research API" | `researcher` |
+
+**Skill auto-invoke** (chạy ngầm, không cần gọi tay):
+
+| Tình huống | Skill tự bắn |
+|:--|:--|
+| Đụng SDK bên thứ 3 (Firebase, Playwright, Telegram, Electron Builder...) | `source-driven` — verify doc trước khi code |
+| Feature mới nhiều mảnh có chỗ chưa chắc khả thi | `risk-first` — làm mẩu rủi ro nhất trước |
+| Hệ chạy song song (worker pool, bot nhiều acc, proxy forward) | `trace-log` — structured log + correlation ID |
+
+---
+
+### ⚡ OpenAI Codex CLI
+
+<div align="center">
+<img src="assets/codex-install.svg" alt="Codex CLI — install + parallel isolation" />
+</div>
+
+#### Bước 1: Cài 13 skills (1 lệnh)
 
 ```bash
 git clone https://github.com/xomno01/luuvanskill.git
 bash luuvanskill/codex/install.sh
 ```
 
+Output mẫu:
+
+```
+=== luuvanskill Codex Install ===
+[OK] ~/.codex/AGENTS.md
+[OK] ~/.agents/skills/ecc/SKILL.md
+[OK] ~/.agents/skills/source-driven/SKILL.md
+[OK] ~/.agents/skills/risk-first/SKILL.md
+[OK] ~/.agents/skills/trace-log/SKILL.md
+[OK] ~/.agents/skills/architect/SKILL.md
+[OK] ~/.agents/skills/senior-dev/SKILL.md
+... (13 skills total)
+
+Done! 13 skills installed.
+Invoke with: $skill-name (e.g. $ecc, $senior-dev, $debugger)
+```
+
 Script tự copy:
-- `codex/AGENTS.md` → `~/.codex/AGENTS.md` (global instructions, tương đương `CLAUDE.md`)
-- `codex/skills/*/SKILL.md` → `~/.agents/skills/*/SKILL.md` (13 skills)
+- `codex/AGENTS.md` → `~/.codex/AGENTS.md` — global instructions, tương đương `CLAUDE.md`
+- `codex/skills/*/SKILL.md` → `~/.agents/skills/*/SKILL.md` — 13 skills (4 core + 9 persona)
 
-Gọi bằng `$skill-name` — ví dụ: `$ecc`, `$senior-dev`, `$debugger`.
+#### Bước 2: Chạy và gọi skill
 
-> **Khác biệt với Claude Code:** Codex không có sub-agent directory, nên các persona (architect, senior-dev...) được port thành Codex skills. Không có `tools:` hay `model:` per-skill — model config qua Codex profiles (`codex --profile ...`).
+```bash
+codex          # mở Codex, gõ prompt bình thường
+$ecc           # gọi skill ecc thủ công
+$senior-dev    # gọi skill senior-dev
+$debugger      # gọi skill debugger
+$researcher    # deep research
+```
+
+> **Codex tự nhận task** — nếu task khớp description của skill, Codex tự đọc `SKILL.md` đúng mà không cần gõ `$`.
+
+**Danh sách 13 skills:**
+
+| Nhóm | Skill | Gọi bằng |
+|:--|:--|:--|
+| Core | ecc, source-driven, risk-first, trace-log | `$ecc`, `$source-driven`, ... |
+| Persona | architect, senior-dev, frontend-ux, automation-engineer | `$architect`, `$senior-dev`, ... |
+| Persona | devops-builder, debugger, qa-tester, researcher, code-reviewer | `$devops-builder`, `$debugger`, ... |
+
+---
+
+#### 🔀 Chạy nhiều project song song — `codex-isolated.bat`
+
+Codex CLI có bug đã biết ([#11435](https://github.com/openai/codex/issues/11435), [#24224](https://github.com/openai/codex/issues/24224)): khi 2+ project cùng chạy, shared `~/.codex/` state bị **leak giữa sessions** → Codex hiểu sai context hoặc không nhận đúng config.
+
+**`codex-isolated.bat`** giải quyết bằng cách tạo `CODEX_HOME` riêng cho mỗi project:
+
+```batch
+# Thay vì dùng: codex
+# Dùng:         codex-isolated.bat [tên-project]
+
+cd C:\Projects\alpha
+codex-isolated.bat alpha
+# → CODEX_HOME: C:\Users\<you>\.codex-sessions\alpha\
+
+cd C:\Projects\beta
+codex-isolated.bat beta
+# → CODEX_HOME: C:\Users\<you>\.codex-sessions\beta\
+```
+
+Mỗi lần chạy, bat tự sync `config.toml`, `auth.json`, `installation_id`, `AGENTS.md` từ `~/.codex/` vào CODEX_HOME mới — đảm bảo dùng config mới nhất mà không bị nhiễm bởi session khác.
+
+**Cài vào PATH (chạy từ bất kỳ đâu):**
+
+```cmd
+copy luuvanskill\codex\codex-isolated.bat %WINDIR%\
+```
+
+**Sơ đồ trước / sau:**
+
+```
+❌ Không có isolation — sessions xung đột:
+  Project Alpha ──┐
+                  ├──▶  ~/.codex/  (shared state)  ──▶ conflict!
+  Project Beta  ──┘
+
+✅ Với codex-isolated.bat — mỗi project độc lập:
+  Project Alpha ──▶  ~/.codex-sessions/alpha/  ──▶ OK
+  Project Beta  ──▶  ~/.codex-sessions/beta/   ──▶ OK
+
+  ~/.agents/skills/  vẫn dùng chung (read-only, an toàn)
+```
+
+**Cú pháp đầy đủ:**
+
+```batch
+codex-isolated.bat                         # tên = thư mục hiện tại
+codex-isolated.bat my-project              # đặt tên tùy ý
+codex-isolated.bat my-project "fix bug"    # non-interactive (prompt trực tiếp)
+```
+
+---
+
+**So sánh Claude Code vs Codex CLI:**
+
+| | Claude Code | Codex CLI |
+|:--|:--|:--|
+| Agents | `~/.claude/agents/*.md` (9 agents, context riêng) | Port thành skills `~/.agents/skills/` |
+| Skills | `~/.claude/skills/*/SKILL.md` | `~/.agents/skills/*/SKILL.md` |
+| Global instructions | `~/.claude/CLAUDE.md` | `~/.codex/AGENTS.md` |
+| Model config | `model:` trong frontmatter agent | Codex profiles (`--profile`) |
+| Auto-invoke | `description` field trong agent/skill | `description` field trong SKILL.md |
+| Gọi thủ công | `/skill-name` hoặc `@agent-name` | `$skill-name` |
+| Parallel isolation | Native | `codex-isolated.bat` (thư mục này) |
 
 <img src="assets/divider.svg" alt="" />
 
@@ -105,9 +263,12 @@ Gọi bằng `$skill-name` — ví dụ: `$ecc`, `$senior-dev`, `$debugger`.
 # Máy chính: sửa skill rồi đẩy lên
 git commit -am "update skill" && git push
 
-# Máy khác: kéo bản mới
+# Máy khác: kéo bản mới (Claude Code)
 /plugin marketplace update
 /plugin update luuvanskill
+
+# Máy khác: kéo bản mới (Codex CLI)
+git pull && bash codex/install.sh
 ```
 
 ## 🧭 11 nguyên tắc làm việc
@@ -122,20 +283,21 @@ Nêu giả định trước khi code · scope discipline · risk-first · verify
 ```text
 luuvanskill/
 ├── .claude-plugin/
-│   ├── plugin.json        # manifest plugin
-│   └── marketplace.json   # catalog marketplace (source ./)
-├── skills/                # 9 skill Claude Code, mỗi cái 1 thư mục có SKILL.md
+│   ├── plugin.json          # manifest plugin
+│   └── marketplace.json     # catalog marketplace (source ./)
+├── skills/                  # 9 skill Claude Code, mỗi cái 1 thư mục có SKILL.md
 │   ├── ecc/  source-driven/  risk-first/  trace-log/  IMOL2o/
 │   ├── baoyu-design/  cinematic-3d-web/  deep-research/  create-image/
-├── agents/                # 9 sub-agent Claude Code (copy → ~/.claude/agents/)
-│   ├── TEAM.md            # sơ đồ team + hướng dẫn dispatch
+├── agents/                  # 9 sub-agent Claude Code (copy → ~/.claude/agents/)
+│   ├── TEAM.md              # sơ đồ team + hướng dẫn dispatch
 │   ├── architect.md  senior-dev.md  frontend-ux.md  automation-engineer.md
 │   ├── devops-builder.md  debugger.md  qa-tester.md  researcher.md
 │   └── code-reviewer.md
-├── codex/                 # OpenAI Codex CLI port
-│   ├── AGENTS.md          # global instructions (tương đương CLAUDE.md)
-│   ├── install.sh         # script cài 1 lệnh
-│   └── skills/            # 13 skills (4 core + 9 persona), gọi bằng $skill-name
+├── codex/                   # OpenAI Codex CLI port
+│   ├── AGENTS.md            # global instructions (tương đương CLAUDE.md)
+│   ├── install.sh           # script cài 1 lệnh — copy vào ~/.agents/skills/
+│   ├── codex-isolated.bat   # fix parallel session bug — CODEX_HOME per project
+│   └── skills/              # 13 skills (4 core + 9 persona), gọi bằng $skill-name
 │       ├── ecc/  source-driven/  risk-first/  trace-log/
 │       ├── architect/  senior-dev/  frontend-ux/  automation-engineer/
 │       ├── devops-builder/  debugger/  qa-tester/  researcher/
@@ -143,7 +305,11 @@ luuvanskill/
 ├── reference/
 │   ├── working-discipline.md      # 11 nguyên tắc (verbose, để tham chiếu)
 │   └── claude-md-optimization.md  # lazy-load pattern giảm 57% tokens
-└── assets/                # hero.svg + divider.svg (pixel-art animation)
+└── assets/                        # pixel-art + terminal animation SVGs
+    ├── hero.svg                   # banner chính (pixel font animation)
+    ├── divider.svg                # divider decorative
+    ├── claude-install.svg         # animated Claude Code install guide ← NEW
+    └── codex-install.svg          # animated Codex CLI install guide ← NEW
 ```
 
 <div align="center">
