@@ -5,7 +5,7 @@
 <br/>
 
 ![Claude Code](https://img.shields.io/badge/Claude_Code-plugin_%2B_marketplace-7C5CFF?style=for-the-badge&logo=anthropic&logoColor=white)
-![Codex CLI](https://img.shields.io/badge/Codex_CLI-13_skills-FF4D8D?style=for-the-badge&logo=openai&logoColor=white)
+![Codex CLI](https://img.shields.io/badge/Codex_CLI-14_skills-FF4D8D?style=for-the-badge&logo=openai&logoColor=white)
 ![Skills](https://img.shields.io/badge/skills-10-21E6FF?style=for-the-badge)
 ![Agents](https://img.shields.io/badge/agents-9-00D4AA?style=for-the-badge)
 ![Private](https://img.shields.io/badge/repo-private-FF4D8D?style=for-the-badge)
@@ -189,6 +189,7 @@ $researcher    # deep research
 | Core | ecc, source-driven, risk-first, trace-log | `$ecc`, `$source-driven`, ... |
 | Persona | architect, senior-dev, frontend-ux, automation-engineer | `$architect`, `$senior-dev`, ... |
 | Persona | devops-builder, debugger, qa-tester, researcher, code-reviewer | `$devops-builder`, `$debugger`, ... |
+| Công cụ | web-clone | `$web-clone` |
 
 ---
 
