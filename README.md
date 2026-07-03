@@ -6,7 +6,7 @@
 
 ![Claude Code](https://img.shields.io/badge/Claude_Code-plugin_%2B_marketplace-7C5CFF?style=for-the-badge&logo=anthropic&logoColor=white)
 ![Codex CLI](https://img.shields.io/badge/Codex_CLI-13_skills-FF4D8D?style=for-the-badge&logo=openai&logoColor=white)
-![Skills](https://img.shields.io/badge/skills-9-21E6FF?style=for-the-badge)
+![Skills](https://img.shields.io/badge/skills-10-21E6FF?style=for-the-badge)
 ![Agents](https://img.shields.io/badge/agents-9-00D4AA?style=for-the-badge)
 ![Private](https://img.shields.io/badge/repo-private-FF4D8D?style=for-the-badge)
 ![Author](https://img.shields.io/badge/by-xomno01-FFAE3D?style=for-the-badge)
@@ -38,6 +38,7 @@ Một repo vừa là **kho lưu trữ**, vừa là **Claude Code marketplace + p
 | 🌌 | **cinematic-3d-web** | Three.js / WebGL site cinematic kiểu *awwwards* |
 | 🔬 | **deep-research** | Deep research đa nguồn, có verify + cite |
 | 🖼️ | **create-image** | Tạo ảnh AI (FLUX API) hoặc programmatic (Pillow/SVG/NumPy) |
+| 🔁 | **web-clone** | Clone/reproduce website — real-source-first decision tree + 12 scripts Playwright (recon, visual-diff, design-dna); L1–L6 complexity |
 
 > 🤖 **Sub-agents** — 9 chuyên gia chạy độc lập (context riêng, tool riêng), dùng được mọi project.
 
@@ -287,7 +288,7 @@ luuvanskill/
 │   └── marketplace.json     # catalog marketplace (source ./)
 ├── skills/                  # 9 skill Claude Code, mỗi cái 1 thư mục có SKILL.md
 │   ├── ecc/  source-driven/  risk-first/  trace-log/  IMOL2o/
-│   ├── baoyu-design/  cinematic-3d-web/  deep-research/  create-image/
+│   ├── baoyu-design/  cinematic-3d-web/  deep-research/  create-image/  web-clone/
 ├── agents/                  # 9 sub-agent Claude Code (copy → ~/.claude/agents/)
 │   ├── TEAM.md              # sơ đồ team + hướng dẫn dispatch
 │   ├── architect.md  senior-dev.md  frontend-ux.md  automation-engineer.md
