@@ -5,12 +5,12 @@ description: >-
   ECC framework, tailored cho projects của anh: Electron apps, Hotmail/MMO automation,
   Playwright bots, Node servers, game tu tiên, Firebase backends. Gọi khi cần
   code chuẩn, review, audit, error handling, devops, hoặc hỏi "nên làm thế nào".
-  Tương đương gọi 271 ECC skills qua một cổng duy nhất.
+  Tương đương gọi 286 ECC skills (sync upstream v2.2.1, 2026-08-31) qua một cổng duy nhất.
 ---
 
 # ECC — Everything Claude Code Hub
 
-Anh gọi `/ecc` để tôi đọc đúng domain-file và áp dụng methodology phù hợp với task. Không cần nhớ 271 skill riêng — một lệnh, tôi tự route.
+Anh gọi `/ecc` để tôi đọc đúng domain-file và áp dụng methodology phù hợp với task. Không cần nhớ 286 skill riêng — một lệnh, tôi tự route.
 
 ## Cách hoạt động
 

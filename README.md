@@ -24,7 +24,7 @@ Một repo vừa là **kho lưu trữ**, vừa là **Claude Code marketplace + p
 
 | | Skill | Tác dụng |
 |:--:|:--|:--|
-| 🧭 | **ecc** | Hub điều phối 271 engineering pattern, tự route theo domain (automation / frontend / backend / devops / game / quality / patterns) |
+| 🧭 | **ecc** | Hub điều phối 286 engineering pattern, tự route theo domain (automation / frontend / backend / devops / game / quality / patterns) |
 | 📚 | **source-driven** | Chống AI bịa API/SDK bên thứ 3 — verify từ doc chính thức trước khi code (Firebase v8/v9, Playwright, Telegram, mail.tm, SMM, Electron Builder, OpenAI/Anthropic) |
 | 🎯 | **risk-first** | Build feature mới: làm mẩu **rủi ro nhất trước** + vertical slice + save point |
 | 🔎 | **trace-log** | Structured JSON log + correlation ID cho hệ chạy song song (AM Proxy, bot worker pool) |

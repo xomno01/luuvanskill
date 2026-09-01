@@ -150,3 +150,84 @@ async function notifyTelegram(results) {
   await telegramBot.sendMessage(CHAT_ID, msg);
 }
 ```
+
+---
+
+# SYNC ECC v2.2.1 (2026-08-31)
+
+## 11. Agent Loop Design & Review (từ skill `loop-design-check`)
+
+> Dùng khi: bọc vòng lặp tự động quanh agent (bot tự relogin, worker chạy tới khi xong, cron fix lỗi đêm). Vấn đề: loop không có "steer về mục tiêu" — viết sai là nó quay vô định đốt token, hoặc gian lận verifier để "thắng".
+
+### Gate 4 điều kiện — thiếu 1 là ĐỪNG bọc loop
+1. Task lặp lại theo tuần hoặc dày hơn
+2. Verify được tự động hóa (có test/script trả yes/no)
+3. Token/compute budget chịu nổi
+4. Agent có tool thực sự *chạy và xem được kết quả*
+
+> Repo không xứng đáng có loop (không có baseline đối soát + test) thì loop chỉ KHẾCH ĐỘI lỗi lên.
+
+### Goal phải machine-decidable + có boundary
+```javascript
+// SAI: goal mơ hồ → comparator không judge được, hoặc đoán bừa
+// "làm cho pool chạy ổn định", "login cho đẹp"
+
+// ĐÚNG: yes/no được + boundary ("KHÔNG được làm gì")
+// "pool chạy xong 50 accounts VÀ không account nào bị skip âm thầm
+//  VÀ không sửa file test  VÀ xuất change-list"
+```
+- **Reconciliation > assertion**: neo kết quả vào sự thật bên ngoài (con số backoffice, golden sample, đối soát DB) thay vì "tests pass" — tests pass có thể bị qua mặt (loại assert, mock giả, nuốt exception); "diff vs số gốc < 0.01" thì không.
+- **Boundary đi kèm done-criterion** — thiếu boundary = cấp giấy phép gian lận (Goodhart).
+
+### 3 vai plan/build/judge — judge phải ĐỘC LẬP
+| Vai | Làm | Quy tắc sắt |
+|---|---|---|
+| Plan | chẻ goal thành spec + điều kiện nghiệm thu **script judge được** | — |
+| Build | code theo spec | KHÔNG được sửa điều kiện nghiệm thu |
+| Judge | chạy nghiệm thu độc lập (CI/diff), fail → trả lý do về Build | không phải chính agent Build tự chấm |
+
+3 rules đặt cược vào Judge: ① judge ≠ build (tự chấm bài luôn phình điểm) ② tiêu chí deterministic (pytest, diff đối soát) — không "nhìn có vẻ ổn" ③ Build cấm sửa acceptance. Fail 3 lần liên tiếp → đá lên người.
+
+### Damping + 5 kiểu loop chạy sàn (review checklist)
+Damping bắt buộc: retry cap N + hard stop + **người flip công tắc cuối**. Negative feedback không damping = dao động (loop Ralph: quay tròn đốt token).
+
+| # | Loop sàn kiểu nào | Câu hỏi soi | Kháng thể |
+|---|---|---|---|
+| 1 | Goal là câu đúng-mà-vô-dụng → quay vô định đốt tiền | Exit condition Judge yes/no được không, hay là "quản lý cho tốt"? | Đổi thành điều kiện decidable |
+| 2 | "Verify" = "nhìn có ổn không" → agent tự tin nói ổn rồi dừng | Judge có phải chính bị cáo? Verify có dựa trên rule deterministic? | Đối soát + exit code + judge độc lập |
+| 3 | (tệ nhất) chỉ gate "tests pass" → agent **xoá test** để thắng | Có boundary "KHÔNG được làm gì" chưa, hay chỉ có done-criterion? | Done + boundary cùng lúc |
+| 4 | Trông chờ agent hỏi giữa chừng → nó KHÔNG hỏi, chạy sai tới cùng | Có điểm nào "chỉ rõ được lúc chạy" không? | Hồi clarity trước khi chạy, không để dư |
+| 5 | CLAUDE.md phình + memory ôi thiu → loop càng nhanh càng sai | Docs/memory nó dựa vào có tươi không, ai giữ? | Memory phân tầng + lint định kỳ |
+
+**3 red line — phạm 1 là cấm fully-automatic:**
+- Nhận định cuối cùng thuộc người: cell "done" do người flip, loop chỉ là thợ, không là thẩm định.
+- Trách nhiệm không chuyển giao: việc fail không chịu được (đăng nhầm nội dung, chi tiền, merge nhầm) → không giao quyền tự động.
+- Loop càng "tự cải thiện/tự sửa rule của chính nó" càng phải review ngặt hơn — chặn TRƯỚC action (hard gate), không vá sau.
+
+> Áp vào project của anh: loop relogin Hotmail — goal decidable = "context có cookie hợp lệ + load trang dashboard không bị văng về /login", boundary = "không touch email data của account", judge = script check cookie riêng, không phải chính worker vừa login tự báo thành công.
+
+## 12. Mailtrap — gửi email transactional có sandbox (từ skill `mailtrap-email-integration`)
+
+> Dùng khi: thêm tính năng "gửi email" (xác nhận signup, reset password, notification) hoặc debug vì sao mail dev/staging không tới.
+
+- **Sandbox ≠ Production**: dev/staging bắn vào Sandbox API (capture mọi mail, không deliver tới inbox thật). Bật production phải dùng endpoint domain đã verify. **Cấm đá dev vào production endpoint.**
+- **Auth**: Bearer token trong header, token scope theo project — sandbox và production là 2 token khác nhau.
+- **Domain verification**: production cần verify domain qua DNS (SPF, DKIM, DMARC) TRƯỚC, không thì mail rơi im lặng hoặc vào spam — lỗi kiểu "không có error nhưng người nhận không thấy".
+
+```javascript
+// Production send (đã verify domain)
+const res = await fetch("https://send.api.mailtrap.io/api/send", {
+  method: "POST",
+  headers: {
+    "Authorization": `Bearer ${process.env.MAILTRAP_API_TOKEN}`, // token production riêng
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    from: { email: "no-reply@yourverifieddomain.com", name: "Your App" },
+    to: [{ email: to }],
+    subject,
+    html,
+  }),
+});
+if (!res.ok) throw new Error(`Mailtrap ${res.status}: ${await res.text()}`);
+```

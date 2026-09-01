@@ -143,3 +143,64 @@ cat .gitignore | grep ".env"
 # npm audit
 npm audit --audit-level=high
 ```
+
+---
+
+# SYNC ECC v2.2.1 (2026-08-31)
+
+## Delivery Gate — chốt cơ khí trước khi được "xong" (từ skill `delivery-gate`)
+
+> Dùng khi: agent dễ tự tuyên bố "xong rồi" trong khi habit bị bỏ — không capture lesson, shortcut có hệ thống, ổ đĩa đầy ngầm.
+
+Nguyên lý: **gate cơ khí ≠ gate suy luận**. self-audit (suy luận) kiểm tra "nội dung có đúng/honest không"; delivery-gate (cơ khí) chỉ check **fact máy đọc được** — y hệt triết lý CI gate. Không AI inference.
+
+| Check | Cơ chế | Khi dính |
+|---|---|---|
+| Rationalization ("skip tests for now", "pre-existing bug") | regex trên phần cuối transcript | **chỉ warning** (regex false-positive được) |
+| Learning library ôi thiu (mtime của 5 path) | so mtime với hôm nay | ≥3 stale HOẶC growth-log stale + task complex → **Block** |
+| Disk < 50GB | `disk_usage` | warning |
+| Disk < 15GB | `disk_usage` | **Block** (exit 2) |
+
+```json
+// Stop hook trong settings.json — chặn trước khi agent tuyên bố xong
+{ "hooks": { "Stop": [{ "hooks": [{
+  "type": "command",
+  "command": "python3 ~/.claude/scripts/quality-gate.py",
+  "timeout": 5000
+}] }] } }
+```
+
+- Task complex = ngưỡng edit/write ≥ 3 calls (config `COMPLEX_THRESHOLD`).
+- Gate ép **habit** chạm learning library, không đảm bảo **chất lượng** nội dung ghi — muốn chất lượng thì pair với self-audit. Defense in depth: cơ khí chặn sâu bại, suy luận chặn nguỵ biện.
+
+## Growth Log — log học được pattern, không phải nhật ký (từ skill `growth-log`)
+
+> Dùng khi: vừa xong task complex, vừa fail, hoặc "khó hơn dự kiến". Trivial fix (typo, đổi config 1 dòng) → bỏ qua. Ngưỡng: task có debugging/redo/rollback/quyết định non-obvious không? Có → ghi.
+
+**3 rules:**
+1. **Failure > Achievement** — 1 bug mà mò 2 tiếng dạy nhiều hơn 3 feature chạy ngay lần đầu.
+   - SAI: "Successfully implemented the login flow."
+   - ĐÚNG: "Session token không persist vì cookie `SameSite` mặc định `Lax` trên Chrome 128+. Pattern: cross-origin thì set tường minh `SameSite=None; Secure`. Signal nhận diện: auth gãy sau khi browser nâng cấp."
+2. **Bole principle** — trước khi ghi entry mới, hỏi: "cái này có cùng root cause với cái đã ghi chưa?" Cùng root-cause khác triệu chứng → MERGE vào entry cũ, không tạo trùng.
+3. **Phải transferable** — entry nào không viết được câu "Lần sau gặp [signal] tôi sẽ [action]" là chưa extract ra pattern.
+
+```markdown
+## [Tên entry = pattern, không phải sự việc]
+### Context — định làm gì, vỡ ra sao
+### Root Cause — cơ chế gốc, không phải triệu chứng
+### The Pattern (transferable)
+- Lần sau gặp [tình huống tương tự] → [action cụ thể]
+- Signal nhận diện: [dấu hiệu quan sát được nói pattern này đang active]
+### Related — link entry liên quan
+```
+
+> Ví dụ dạng bot của anh: "OTP poll fail âm thầm vì `messages.find()` trả undefined khi mailbox rỗng — không throw mà cứ poll tới timeout. Pattern: mọi `.find()` trong flow chờ kết quả phải có explicit throw. Signal: step mất đúng timeout nhưng log không có error nào."
+
+## Council + External Critique (từ skill `council-multi-model`)
+
+> Dùng khi: quyết định go/no-go mơ hồ, hệ quả lớn — cần một model ngoài cố "đập vỡ" bản tổng hợp trước khi chốt.
+
+- Chạy council bình thường (các position + synthesis draft) TRƯỚC, rồi mới thêm **1 node duy nhất**: gửi packet review gọn (draft + các điểm disagree) cho model ngoài (Codex/OpenAI) gọi nó phá synthesis.
+- **Cần consent tường minh** trước khi gửi material ra provider ngoài — cấm gửi credential/proprietary/personal data nếu anh chưa duyệt đúng packet đó.
+- Label trung thực: host đang là OpenAI mà reviewer cũng OpenAI → ghi `same-provider external critique`, KHÔNG nhận là "đa góc nhìn đa provider". Adapter không có → ghi review absent.
+- Quyết định cuối vẫn là người — external critique chỉ là 1 tham số thêm, không phải authority thứ hai.
