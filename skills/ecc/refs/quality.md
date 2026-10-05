@@ -1,6 +1,7 @@
 # ECC Quality — Review / Test / Security / Debug
 
 > Dùng khi: code review, security audit, tìm bug, viết test, regression check
+> Xem thêm quy chuẩn bảo mật chi tiết tại skill [`security-review`](../../security-review/SKILL.md) (OWASP Top 10 + Agentic Security Top 10).
 
 ## Code Review — 5 chiều kiểm tra
 

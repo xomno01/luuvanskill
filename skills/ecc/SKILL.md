@@ -50,5 +50,9 @@ Ngoài ECC, 3 skill chuyên biệt dưới đây TỰ chạy khi khớp ngữ c�
 | Đụng SDK/API bên thứ 3 (Firebase v8/v9, Playwright, Telegram, mail.tm, SMM, Electron Builder, OpenAI/Anthropic) → verify doc, đừng bịa method/param | `source-driven` |
 | Build feature mới nhiều mảnh có chỗ chưa chắc khả thi (AM Proxy bridge, relogin Hotmail, anti-bot, worker pool, gameplay tu tiên) → làm mẩu rủi ro nhất trước | `risk-first` |
 | Viết/debug hệ chạy song song nhiều bước (AM Proxy forward, bot worker pool nhiều account, luồng OTP) → structured log + correlation ID | `trace-log` |
+| Rà soát bảo mật toàn diện, auth/session, secrets, query DB, pentest trước khi release | `security-review` |
+| Làm game bài bản chuẩn studio (Godot, Unity, Unreal, Canvas 2D): 7-phase pipeline, GDD, game feel | `game-studio` |
+| Dựng đồ họa & chuyển động web game Canvas 2D 60 FPS bằng code thuần (Procedural pixel art, chibi) | `canvas-game-art` |
+| Clone/reproduce website: bóc tách tài nguyên web & CDN, audio pack binary, đối soát SHA-256 | `web-clone` |
 
-> Cả 3 nằm trong bộ `luuvanskill` (github private xomno01/luuvanskill) cùng với chính `ecc`. Xem thêm 11 NGUYÊN TẮC LÀM VIỆC trong `CLAUDE.md`.
+> Tất cả nằm trong bộ `luuvanskill` (github private xomno01/luuvanskill) cùng với chính `ecc`. Xem thêm 11 NGUYÊN TẮC LÀM VIỆC trong `CLAUDE.md`.
