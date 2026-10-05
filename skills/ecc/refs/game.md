@@ -1,6 +1,7 @@
 # ECC Game — Tu Tiên / Multiplayer / Real-time Patterns
 
 > Domain: game-tu-tien, game-tu-tien-online
+> Hệ thống game studio chuẩn hóa: xem thêm skill [`game-studio`](../../game-studio/SKILL.md) (chuyển thể từ Claude Code Game Studios với 7-phase pipeline, GDD, Game feel & Juice, Engine guides).
 
 ## Kiến trúc game tu tiên offline (single-player)
 

@@ -6,7 +6,7 @@
 
 ![Claude Code](https://img.shields.io/badge/Claude_Code-plugin_%2B_marketplace-7C5CFF?style=for-the-badge&logo=anthropic&logoColor=white)
 ![Codex CLI](https://img.shields.io/badge/Codex_CLI-14_skills-FF4D8D?style=for-the-badge&logo=openai&logoColor=white)
-![Skills](https://img.shields.io/badge/skills-10-21E6FF?style=for-the-badge)
+![Skills](https://img.shields.io/badge/skills-12-21E6FF?style=for-the-badge)
 ![Agents](https://img.shields.io/badge/agents-9-00D4AA?style=for-the-badge)
 ![Private](https://img.shields.io/badge/repo-private-FF4D8D?style=for-the-badge)
 ![Author](https://img.shields.io/badge/by-xomno01-FFAE3D?style=for-the-badge)
@@ -29,6 +29,8 @@ Một repo vừa là **kho lưu trữ**, vừa là **Claude Code marketplace + p
 | 🎯 | **risk-first** | Build feature mới: làm mẩu **rủi ro nhất trước** + vertical slice + save point |
 | 🔎 | **trace-log** | Structured JSON log + correlation ID cho hệ chạy song song (AM Proxy, bot worker pool) |
 | 🌐 | **IMOL2o** | Dựng website **đỉnh cao &amp; đẹp chuẩn 2026** — thẩm mỹ (bento/aurora/OKLCH), stack frontend (Astro/Next/SvelteKit), cinematic 3D/WebGPU, motion, AI workflow |
+| 🎮 | **game-studio** | Hệ thống phát triển game toàn diện chuyển thể từ Claude Code Game Studios (CCGS): 7-phase pipeline, GDD, Game Feel & The Juice, Godot/Unity/Unreal/Web Canvas |
+| 🎨 | **canvas-game-art** | Dựng đồ họa & hoạt ảnh Web Game Canvas 2D mượt mà 60 FPS bằng code thuần: Procedural Pixel Art, Chibi generator, walking bobbing 4-frame, cartoon outline, LRU cache |
 
 > 🎨 **Skill tải về** — đồ hay của cộng đồng, gom chung cho tiện sync.
 
