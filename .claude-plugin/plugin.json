@@ -1,7 +1,7 @@
 {
   "name": "luuvanskill",
-  "description": "Bộ skill engineering cá nhân của xomno01 — ecc hub (271 patterns) + source-driven/risk-first/trace-log (tự tạo cho automation, Electron, proxy, game tu tiên, Firebase) + baoyu-design, cinematic-3d-web, deep-research + IMOL2o (dựng website đỉnh cao & đẹp chuẩn 2026).",
-  "version": "1.1.0",
+  "description": "Bộ skill engineering cá nhân của xomno01 — ecc hub (271 patterns) + source-driven/risk-first/trace-log (tự tạo cho automation, Electron, proxy, game tu tiên, Firebase) + baoyu-design, cinematic-3d-web, deep-research, IMOL2o (website đỉnh cao 2026), game-studio, canvas-game-art, security-review.",
+  "version": "1.2.0",
   "author": {
     "name": "xomno01"
   },

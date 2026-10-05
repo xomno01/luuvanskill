@@ -113,6 +113,7 @@ node /Users/jane/.shared-skills/web-clone/scripts/dna-scaffold.mjs \
 | 多页面官网 / 产品站 | 先跑 `route-crawl.mjs` 做路由地图 → 每类页面抽模板 → 统一替换内容 |
 | 复杂交互站 | 先跑 `interaction-probe.mjs` 记录 hover/click/scroll/canvas drag 状态 → 按状态补交互，不许只截首屏 |
 | **WebGL / Canvas / Three.js 重前端** | **深度逆向真源码（见下）→ 忠实复刻 或 找同类开源 3D 模板换内容**。单文件原生站常常逐字节保留=最忠实复刻。**找不到真源码时走运行时帧捕获 + baseline 闸门**，纪律见 `references/effect-extraction.md`（可委托 web-shader-extractor） |
+| **Web Game 2D / Canvas Obfuscated (tiệm nét, minigame)** | **Playwright Network Capture toàn bộ assets + CDN phụ (Cloudflare Pages/S3) → Bóc tách audio packs binary (.pack) / BGM (.m4a) → Mock Auth/Save SQLite/Local → Đối soát pháp y SHA-256 100%** |
 | **静态构建站（Astro/Vite SSG/Hugo），含重 WebGL** | **`mirror-site.mjs` 全量镜像部署资产 → 自托管字体 + 删追踪 → 本地 web 根服务 = 真源码 1:1 忠实复刻**。对静态站，"拿到真源码"="镜像部署资产整套"。配方见 `references/static-mirror.md`。范例：oryzo.ai（Lusion，L6，高斯泼溅，hero 像素 diff 5/5） |
 | 用现成开源主题的站（Astro/Hugo 主题） | 去对应主题市场找源主题（**仅限套用现成主题的站**；定制站走上一行的全量镜像，别来这行） |
 
@@ -132,6 +133,7 @@ mkdir ~/projects/website-clones/<站名>-clone && cd $_
 - **写 NOTES.md**（必须）：包含复杂度、复刻模式、原站 vs 克隆站对比、保真度评分、已知缺口。模板见 `references/deliverables.md`。
 - **复杂站写 TEARDOWN.md**（技术拆解）。所有结论标真源码行号。
 - **复刻后评分**：按 `references/assessment.md` 给结构 / 视觉 / 交互 / 响应式 / 内容替换 / 功能完整度打分。分数要能被截图、源码、运行结果支撑。
+- **Đối soát pháp y SHA-256 (Forensic Hash Audit)**: Với các trang game / app có nhiều tài nguyên phân tán (CDN, packs, decor), chạy script so sánh băm SHA-256 từng file local với server gốc và CDN phụ để cam kết 100% khớp byte-for-byte trước khi bàn giao.
 - **浏览器真验证**（硬要求，不许只看代码就说"应该能跑"）：起本地服务器 → 浏览器打开 → 抓 console（不能有 JS/WebGL 编译错误）→ 截图对照原站。诚实记录验证不了的部分（如合成 PointerEvent `isTrusted=false` 触发不了拖拽，要如实写，别伪造"拖动成功"）。
 
 复刻完成后再跑一次克隆站侦察，并生成自动对比报告：
