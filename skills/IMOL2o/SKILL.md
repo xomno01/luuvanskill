@@ -44,8 +44,8 @@ description: >-
    scroll-reveal phức tạp) — spike chạy được rồi mới làm phần dễ.
 4. **Dựng layout + states đầy đủ** (loading/empty/error/success) trước khi đánh bóng.
 5. **Thêm đúng 1–2 "wow moment"**, phần còn lại motion tinh tế.
-6. **Đo:** Core Web Vitals (INP < 200ms, LCP tốt), test `prefers-reduced-motion`,
-   contrast, mobile thật. Performance là tiêu chí, không phải bonus.
+6. **Đo & Thẩm định:** Core Web Vitals (INP < 200ms, LCP tốt), test `prefers-reduced-motion`,
+   contrast, mobile thật. Chạy thẩm định cơ học `sloplint` từ skill `hallmark` để quét sạch mọi dấu vết AI slop (đạt 0 FAIL trước khi bàn giao). Performance & Polish là tiêu chí, không phải bonus.
 
 ## Decision framework — chọn stack theo kịch bản
 
@@ -96,6 +96,7 @@ Radix UI thuần (team chuyển sang Base UI nhưng Base UI còn RC). Xem `refer
 
 ## Skill liên quan đã có sẵn trong máy
 
+- `hallmark` — động cơ kiểm soát chất lượng & anti-AI-slop cơ học (chạy `sloplint.mjs` quét code và render headless, 48 themes vật liệu, kiểm duyệt The Floor).
 - `cinematic-3d-web` — engine architecture cho site 3D/WebGL đỉnh (gọi khi làm hero cinematic).
 - `baoyu-design` — dựng mockup/prototype/landing HTML self-contained (bước spike nhanh).
 - `source-driven` — verify SDK trước khi code (bắt buộc khi đụng Three.js/GSAP/framework SDK).

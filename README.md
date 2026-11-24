@@ -5,8 +5,9 @@
 <br/>
 
 ![Claude Code](https://img.shields.io/badge/Claude_Code-plugin_%2B_marketplace-7C5CFF?style=for-the-badge&logo=anthropic&logoColor=white)
+![Antigravity](https://img.shields.io/badge/Antigravity-41_skills_%2B_plugins-10B981?style=for-the-badge)
 ![Codex CLI](https://img.shields.io/badge/Codex_CLI-14_skills-FF4D8D?style=for-the-badge&logo=openai&logoColor=white)
-![Skills](https://img.shields.io/badge/skills-13-21E6FF?style=for-the-badge)
+![Skills](https://img.shields.io/badge/skills-41-21E6FF?style=for-the-badge)
 ![Agents](https://img.shields.io/badge/agents-9-00D4AA?style=for-the-badge)
 ![Private](https://img.shields.io/badge/repo-private-FF4D8D?style=for-the-badge)
 ![Author](https://img.shields.io/badge/by-xomno01-FFAE3D?style=for-the-badge)
@@ -42,6 +43,21 @@ Một repo vừa là **kho lưu trữ**, vừa là **Claude Code marketplace + p
 | 🔬 | **deep-research** | Deep research đa nguồn, có verify + cite |
 | 🖼️ | **create-image** | Tạo ảnh AI (FLUX API) hoặc programmatic (Pillow/SVG/NumPy) |
 | 🔁 | **web-clone** | Clone/reproduce website — real-source-first decision tree + 12 scripts Playwright (recon, visual-diff, design-dna); L1–L6 complexity |
+| 🔬 | **reverse-engineer-anything** | Dịch ngược binary/APK/Electron/JS/firmware bằng REA MCP (đã cập nhật từ `rea-agents` **v6.10.1**) |
+| 🛠️ | **craft-anything** | Điều tra phần mềm biên dịch theo quy trình evidence-first v2 (đồng bộ từ `storytold/craft-anything` `9f3355c`) |
+| 🏛️ | **hallmark** | Bộ kiểm duyệt thẩm mỹ web anti-AI-slop + linter cơ học `sloplint.mjs` & 48 themes vật liệu |
+| 🧠 | **antigravity-memory** | Bộ nhớ xuyên phiên cho Antigravity (decisions, lessons, thinking journal, router) |
+| 🐛 | **systematic-debugging** | Thiết luật debug 4 bước: điều tra root cause có bằng chứng trước khi sửa code |
+| 🛡️ | **threat-modeling-expert** | Phân tích mô hình mối đe dọa STRIDE / PASTA / attack trees |
+| 🪶 | **tokenleak** | Quy tắc tối ưu ngữ cảnh & cắt giảm token lãng phí cho coding agents |
+| 🎬 | **muse4ai** | Tạo ảnh/video ngắn qua Meta Muse / Muse4AI bridge |
+| 🔌 | **mcp-builder** & **web-perf** | Thiết kế MCP Server chuẩn & tối ưu Core Web Vitals / Lighthouse |
+| ☁️ | **Cloudflare Suite (17 skills)** | `cloudflare`, `cf-cli`, `wrangler`, `workers-best-practices`, `workers-profiling`, `durable-objects`, `agents-sdk`, `basin`, `cloudflare-email-service`, `cloudflare-one`, `cloudflare-one-migrations`, `gateway-workers`, `k2`, `nextjs-on-cloudflare`, `sandbox-stable`, `sandbox-next`, `sandbox-migrate-to-next`, `turnstile-spin` |
+
+> 🧩 **Antigravity Plugins & Rules** — gắn trực tiếp vào `~/.gemini/config/`:
+> - `plugins/token-usage/` — **Token Usage MCP App** gắn trực tiếp vào Sidebar & Side Pane Antigravity (đo token thực tế từng conversation, từng ngày, từng tháng, theo model & tổng cộng). Chạy `npm install` trong thư mục plugin khi cài sang máy mới.
+> - `plugins/core-rules/` — Bộ luật tự động kích hoạt skill & kiểm định chất lượng (`AGENTS.md`).
+> - `rules/memory-always-on.md` — Luật bộ nhớ thường trực và quy tắc an toàn.
 
 > 🤖 **Sub-agents** — 9 chuyên gia chạy độc lập (context riêng, tool riêng), dùng được mọi project.
 

@@ -1,0 +1,13 @@
+{
+  "name": "token-usage",
+  "displayName": "Token Usage",
+  "version": "1.0.0",
+  "description": "Đo và thống kê token thực tế của Antigravity theo từng conversation, từng ngày, từng tháng và tổng cộng — gắn trực tiếp vào sidebar và side pane.",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Mở bảng thống kê Token Usage",
+    "Hôm nay anh đã dùng bao nhiêu token?",
+    "Thống kê token tháng này theo từng ngày và từng model",
+    "Top 10 conversation tốn nhiều token nhất"
+  ]
+}

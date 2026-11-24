@@ -54,5 +54,6 @@ Ngoài ECC, 3 skill chuyên biệt dưới đây TỰ chạy khi khớp ngữ c�
 | Làm game bài bản chuẩn studio (Godot, Unity, Unreal, Canvas 2D): 7-phase pipeline, GDD, game feel | `game-studio` |
 | Dựng đồ họa & chuyển động web game Canvas 2D 60 FPS bằng code thuần (Procedural pixel art, chibi) | `canvas-game-art` |
 | Clone/reproduce website: bóc tách tài nguyên web & CDN, audio pack binary, đối soát SHA-256 | `web-clone` |
+| Reverse engineering: mổ xẻ binary, .exe/DLL, APK, Electron ASAR, .NET, firmware, bóc tách asset game, deobfuscate, protocol, bypass paywall/anti-bot | `reverse-engineer-anything` (Bắt buộc tự động tra cứu offline kho `Awesome-REA` trước khi làm) |
 
 > Tất cả nằm trong bộ `luuvanskill` (github private xomno01/luuvanskill) cùng với chính `ecc`. Xem thêm 11 NGUYÊN TẮC LÀM VIỆC trong `CLAUDE.md`.

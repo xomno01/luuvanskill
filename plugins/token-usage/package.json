@@ -1,0 +1,18 @@
+{
+  "name": "token-usage",
+  "version": "1.0.0",
+  "description": "Native Antigravity MCP App plugin for measuring exact token usage per conversation, day, month, and all-time.",
+  "type": "module",
+  "scripts": {
+    "build:ui": "node ui-src/build.mjs",
+    "start": "node server/index.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.0",
+    "zod": "^4.2.0"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/ext-apps": "latest",
+    "esbuild": "^0.25.0"
+  }
+}

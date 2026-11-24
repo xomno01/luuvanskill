@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "tracker": {
+      "command": "node",
+      "args": [
+        "${PLUGIN_ROOT}/server/index.mjs",
+        "--data-dir=${PLUGIN_DATA}"
+      ]
+    }
+  }
+}
