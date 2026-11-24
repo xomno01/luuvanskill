@@ -21,13 +21,31 @@ Một repo vừa là **kho lưu trữ**, vừa là **Claude Code marketplace + p
 
 ## ⚡ Có gì bên trong
 
-> 🛠️ **Skill tự tạo** — chế riêng cho phong cách dev của mình: automation, Electron, proxy, game tu tiên, Firebase.
+> 🛡️ **Hệ Thống 7 Cặp Kỹ Năng Tự Động Kích Hoạt (Auto-Trigger Matrix - `AGENTS.md`)**  
+> *"Thà tốn token hơn một chút nhưng project chạy ra đúng ý 100%, tuyệt đối không tiết kiệm token mà làm ẩu, đoán mò."*
 
-| | Skill | Tác dụng |
+| Tình huống tự kích hoạt | Skill bắt buộc | Thiết luật & Trách nhiệm cốt lõi |
+|:---|:---|:---|
+| 🐛 **Gặp Bug, Crash, Test Fail** | **systematic-debugging** | `NO FIXES WITHOUT ROOT CAUSE FIRST`. 4 bước: Reproduce -> Boundary -> Root Cause -> Fix & Verify. |
+| 🚀 **Feature mới, Bot, Tool, Game** | **risk-first** | Làm mẩu rủi ro/khó nhất trước (spike), cắt lát dọc (vertical slice) chạy được end-to-end. |
+| 📚 **Dùng SDK / Thư viện bên thứ 3** | **source-driven** | CẤM bịa tên API/method/import. Bắt buộc verify từ tài liệu chính thức trước khi code. |
+| ⚡ **Chạy song song, Worker Pool, Proxy** | **trace-log** | Correlation ID / Trace ID xuyên suốt mọi request và worker. Structured JSON log rõ ràng. |
+| 🔐 **Auth, Token, Secret, API, Payment** | **security-review** & **threat-modeling-expert** | Quét OWASP Top 10, phân định ranh giới tin cậy (trust boundary), sanitize input, bảo vệ secrets. |
+| 🔍 **Dịch ngược, soi binary, Electron, APK** | **reverse-engineer-anything** (REA) | Dùng các công cụ MCP REA để dịch ngược và phân tích mã nhị phân/obfuscated. |
+| 🎨 **Giao diện, Web, Dashboard, Redesign** | **hallmark** & **IMOL2o** | `NO AI SLOP & NO BROKEN WIRING`. Chặn gradient tím/eyebrow, linter `sloplint` 0 FAIL, giữ 100% wiring. |
+
+---
+
+> 🛠️ **Kho Kỹ Năng Kỹ Thuật & Sáng Tạo (19 Skills Toàn Diện)**
+
+| | Skill | Phân loại & Tác dụng |
 |:--:|:--|:--|
-| 🧭 | **ecc** | Hub điều phối 286 engineering pattern, tự route theo domain (automation / frontend / backend / devops / game / quality / patterns) |
-| 📚 | **source-driven** | Chống AI bịa API/SDK bên thứ 3 — verify từ doc chính thức trước khi code (Firebase v8/v9, Playwright, Telegram, mail.tm, SMM, Electron Builder, OpenAI/Anthropic) |
-| 🎯 | **risk-first** | Build feature mới: làm mẩu **rủi ro nhất trước** + vertical slice + save point |
+| 🧭 | **ecc** | Hub điều phối 286 engineering patterns, tự route theo domain (automation / frontend / backend / devops / game / quality / patterns) |
+| 🎨 | **hallmark** | Anti-AI-slop design skill: động cơ linter cơ học `sloplint.mjs`, 48 theme vật liệu, thiết kế theo Job Anatomy, redesign bảo toàn wiring |
+| 🌐 | **IMOL2o** | Dựng website **đỉnh cao & đẹp chuẩn 2026** — thẩm mỹ (bento/aurora/OKLCH), stack frontend (Astro/Next/SvelteKit), cinematic 3D, motion, tích hợp kiểm duyệt `sloplint` |
+| 🔍 | **systematic-debugging** | Quy trình điều tra gốc rễ lỗi (RCA) 4 bước có bằng chứng, cấm sửa mò, cấm vá tạm bợ |
+| 🎯 | **risk-first** | Build feature mới: làm mẩu **rủi ro nhất trước** + vertical slice + save checkpoint |
+| 📚 | **source-driven** | Chống AI bịa API/SDK bên thứ 3 — verify từ doc chính thức trước khi code |
 | 🔎 | **trace-log** | Structured JSON log + correlation ID cho hệ chạy song song (AM Proxy, bot worker pool) |
 | 🌐 | **IMOL2o** | Dựng website **đỉnh cao &amp; đẹp chuẩn 2026** — thẩm mỹ (bento/aurora/OKLCH), stack frontend (Astro/Next/SvelteKit), cinematic 3D/WebGPU, motion, AI workflow |
 | 🎮 | **game-studio** | Hệ thống phát triển game toàn diện chuyển thể từ Claude Code Game Studios (CCGS): 7-phase pipeline, GDD, Game Feel & The Juice, Godot/Unity/Unreal/Web Canvas |
@@ -74,6 +92,7 @@ Một repo vừa là **kho lưu trữ**, vừa là **Claude Code marketplace + p
 | 👁️ | **code-reviewer** | Soi bug + lộ key/token, chỉ đọc & báo cáo |
 
 📌 Kèm references:
+- [`AGENTS.md`](AGENTS.md) — **Quy chuẩn tự động kích hoạt kỹ năng** (Antigravity & Claude Code Auto-Trigger Matrix)
 - [`reference/working-discipline.md`](reference/working-discipline.md) — **11 nguyên tắc làm việc** để dán vào `CLAUDE.md`
 - [`reference/claude-md-optimization.md`](reference/claude-md-optimization.md) — **Lazy-load pattern** giảm 57% input tokens/session
 
