@@ -1,7 +1,7 @@
 {
   "name": "luuvanskill",
-  "description": "Bộ skill & plugin engineering cá nhân của xomno01 (41 skills + 9 agents + Antigravity plugins) — ecc hub (286 patterns), reverse-engineer-anything (REA v6.10.1), craft-anything v2, hallmark, antigravity-memory, systematic-debugging, threat-modeling-expert, tokenleak, muse4ai, Cloudflare suite (17 skills), và Antigravity Token Usage MCP App plugin.",
-  "version": "2.0.0",
+  "description": "Bộ skill & plugin engineering cá nhân của xomno01 (44 skills + 9 agents + Antigravity plugins) — ecc hub (328 patterns, v2.2.3+), reverse-engineer-anything (REA v6.10.1), craft-anything v2, hallmark v2, antigravity-memory, systematic-debugging (v7.0.2), threat-modeling-expert, tokenleak, muse4ai, Cloudflare suite (22 skills), và Antigravity Token Usage MCP App plugin.",
+  "version": "2.1.0",
   "author": {
     "name": "xomno01"
   },

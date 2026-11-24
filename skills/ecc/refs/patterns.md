@@ -247,3 +247,10 @@ Chạy 4 persona song song, mỗi người trả lời từ góc riêng, **analy
 | QA | testability, acceptance criteria, failure modes, regression risk |
 
 Khác `council` (adversarial challenge cho go/no-go) — dev-team là review 4 góc cố định. Hợp nhất output thành checklist concern trước khi chọn phương án.
+
+---
+
+## Pattern mới từ ECC Upstream v2.2.3+ (2026-11-20)
+
+- **Context & Token Budget (`context-budget`, `token-budget-advisor`, `strategic-compact`)**: Tránh đọc cả file lớn khi chỉ cần 1 vùng; chạy tool độc lập song song; chuyển nghiên cứu rộng sang subagent để giữ context chính gọn sạch.
+- **Team Orchestration & Decision Ledger (`team-agent-orchestration`, `recursive-decision-ledger`)**: Với tác vụ lớn nhiều module độc lập, chia lát sở hữu rõ ràng (không đụng cùng 1 file) và chốt tiêu chí nghiệm thu trước khi bắt đầu.

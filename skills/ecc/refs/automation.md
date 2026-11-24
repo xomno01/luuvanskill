@@ -231,3 +231,10 @@ const res = await fetch("https://send.api.mailtrap.io/api/send", {
 });
 if (!res.ok) throw new Error(`Mailtrap ${res.status}: ${await res.text()}`);
 ```
+
+---
+
+## Pattern mới từ ECC Upstream v2.2.3+ (2026-11-20)
+
+- **Browser QA & Click-Path Audit (`browser-qa`, `click-path-audit`)**: Kiểm thử luồng UI/bot bằng bằng chứng thực (DOM state + network response + console errors), không xác nhận pass chỉ dựa vào "không throw exception".
+- **Automation Audit Ops (`automation-audit-ops`, `data-scraper-agent`)**: Mỗi batch job automation phải có checkpoint resume theo ID, phân tách lỗi tạm thời (retry + backoff) với lỗi cứng (dead-letter queue), và không bao giờ chạy vô hạn không có wall-clock timeout.

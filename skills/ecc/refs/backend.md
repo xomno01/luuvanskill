@@ -190,3 +190,10 @@ module.exports = {
   port: parseInt(process.env.PORT) || 3000,
 };
 ```
+
+---
+
+## Pattern mới từ ECC Upstream v2.2.3+ (2026-11-20)
+
+- **MCP Server Patterns & Dependency Review (`mcp-server-patterns`, `mcp-dependency-review`)**: Tách rõ tool cho model vs tool chỉ cho UI app (`visibility: ["app"]`), giữ payload trả về nhỏ (< 1 MiB), validate input bằng schema (Zod), đóng kết nối DB read-only ngay sau khi query để tránh lock.
+- **Content-Hash Cache & Prompt Caching (`content-hash-cache-pattern`, `prompt-caching-strategy`)**: Cache kết quả phân tích file theo `(mtime, size)` hoặc SHA-256 content hash để warm-refresh tính bằng mili-giây; giữ prefix prompt ổn định để tối đa hóa tỉ lệ cache hit (>90%).

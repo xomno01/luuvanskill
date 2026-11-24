@@ -5,12 +5,12 @@ description: >-
   ECC framework, tailored cho projects của anh: Electron apps, Hotmail/MMO automation,
   Playwright bots, Node servers, game tu tiên, Firebase backends. Gọi khi cần
   code chuẩn, review, audit, error handling, devops, hoặc hỏi "nên làm thế nào".
-  Tương đương gọi 286 ECC skills (sync upstream v2.2.1, 2026-08-31) qua một cổng duy nhất.
+  Tương đương gọi 328 ECC skills (sync upstream v2.2.3+, 2026-11-20) qua một cổng duy nhất.
 ---
 
 # ECC — Everything Claude Code Hub
 
-Anh gọi `/ecc` để tôi đọc đúng domain-file và áp dụng methodology phù hợp với task. Không cần nhớ 286 skill riêng — một lệnh, tôi tự route.
+Anh gọi `/ecc` để tôi đọc đúng domain-file và áp dụng methodology phù hợp với task. Không cần nhớ 328 skill riêng — một lệnh, tôi tự route.
 
 ## Cách hoạt động
 
@@ -54,6 +54,7 @@ Ngoài ECC, 3 skill chuyên biệt dưới đây TỰ chạy khi khớp ngữ c�
 | Làm game bài bản chuẩn studio (Godot, Unity, Unreal, Canvas 2D): 7-phase pipeline, GDD, game feel | `game-studio` |
 | Dựng đồ họa & chuyển động web game Canvas 2D 60 FPS bằng code thuần (Procedural pixel art, chibi) | `canvas-game-art` |
 | Clone/reproduce website: bóc tách tài nguyên web & CDN, audio pack binary, đối soát SHA-256 | `web-clone` |
-| Reverse engineering: mổ xẻ binary, .exe/DLL, APK, Electron ASAR, .NET, firmware, bóc tách asset game, deobfuscate, protocol, bypass paywall/anti-bot | `reverse-engineer-anything` (Bắt buộc tự động tra cứu offline kho `Awesome-REA` trước khi làm) |
+| Reverse engineering: mổ xẻ binary, .exe/DLL, APK, Electron ASAR, .NET, firmware, bóc tách asset game, deobfuscate, protocol, bypass paywall/anti-bot | `reverse-engineer-anything` (REA v6.10.1) & `craft-anything` v2 |
+| Thiết kế giao diện web, landing page, dashboard chuẩn thẩm mỹ anti-AI-slop + kiểm định `sloplint.mjs` | `hallmark` v2.0.0 |
 
 > Tất cả nằm trong bộ `luuvanskill` (github private xomno01/luuvanskill) cùng với chính `ecc`. Xem thêm 11 NGUYÊN TẮC LÀM VIỆC trong `CLAUDE.md`.

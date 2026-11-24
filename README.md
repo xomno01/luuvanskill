@@ -5,9 +5,9 @@
 <br/>
 
 ![Claude Code](https://img.shields.io/badge/Claude_Code-plugin_%2B_marketplace-7C5CFF?style=for-the-badge&logo=anthropic&logoColor=white)
-![Antigravity](https://img.shields.io/badge/Antigravity-41_skills_%2B_plugins-10B981?style=for-the-badge)
+![Antigravity](https://img.shields.io/badge/Antigravity-44_skills_%2B_plugins-10B981?style=for-the-badge)
 ![Codex CLI](https://img.shields.io/badge/Codex_CLI-14_skills-FF4D8D?style=for-the-badge&logo=openai&logoColor=white)
-![Skills](https://img.shields.io/badge/skills-41-21E6FF?style=for-the-badge)
+![Skills](https://img.shields.io/badge/skills-44-21E6FF?style=for-the-badge)
 ![Agents](https://img.shields.io/badge/agents-9-00D4AA?style=for-the-badge)
 ![Private](https://img.shields.io/badge/repo-private-FF4D8D?style=for-the-badge)
 ![Author](https://img.shields.io/badge/by-xomno01-FFAE3D?style=for-the-badge)
@@ -70,7 +70,7 @@ Một repo vừa là **kho lưu trữ**, vừa là **Claude Code marketplace + p
 | 🪶 | **tokenleak** | Quy tắc tối ưu ngữ cảnh & cắt giảm token lãng phí cho coding agents |
 | 🎬 | **muse4ai** | Tạo ảnh/video ngắn qua Meta Muse / Muse4AI bridge |
 | 🔌 | **mcp-builder** & **web-perf** | Thiết kế MCP Server chuẩn & tối ưu Core Web Vitals / Lighthouse |
-| ☁️ | **Cloudflare Suite (17 skills)** | `cloudflare`, `cf-cli`, `wrangler`, `workers-best-practices`, `workers-profiling`, `durable-objects`, `agents-sdk`, `basin`, `cloudflare-email-service`, `cloudflare-one`, `cloudflare-one-migrations`, `gateway-workers`, `k2`, `nextjs-on-cloudflare`, `sandbox-stable`, `sandbox-next`, `sandbox-migrate-to-next`, `turnstile-spin` |
+| ☁️ | **Cloudflare Suite (22 skills)** | `cloudflare`, `cf-cli`, `wrangler`, `workers-best-practices`, `workers-development`, `workers-profiling`, `cloudflare-app-bootstrap`, `frameworks-on-cloudflare`, `durable-objects`, `agents-sdk`, `basin`, `cloudflare-email-service`, `cloudflare-one`, `cloudflare-one-migrations`, `gateway-workers`, `k2`, `nextjs-on-cloudflare`, `sandbox-stable`, `sandbox-next`, `sandbox-migrate-to-next`, `turnstile-spin`, `web-perf` |
 
 > 🧩 **Antigravity Plugins & Rules** — gắn trực tiếp vào `~/.gemini/config/`:
 > - `plugins/token-usage/` — **Token Usage MCP App** gắn trực tiếp vào Sidebar & Side Pane Antigravity (đo token thực tế từng conversation, từng ngày, từng tháng, theo model & tổng cộng). Chạy `npm install` trong thư mục plugin khi cài sang máy mới.

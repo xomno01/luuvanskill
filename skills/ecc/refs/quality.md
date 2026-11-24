@@ -205,3 +205,10 @@ Nguyên lý: **gate cơ khí ≠ gate suy luận**. self-audit (suy luận) ki�
 - **Cần consent tường minh** trước khi gửi material ra provider ngoài — cấm gửi credential/proprietary/personal data nếu anh chưa duyệt đúng packet đó.
 - Label trung thực: host đang là OpenAI mà reviewer cũng OpenAI → ghi `same-provider external critique`, KHÔNG nhận là "đa góc nhìn đa provider". Adapter không có → ghi review absent.
 - Quyết định cuối vẫn là người — external critique chỉ là 1 tham số thêm, không phải authority thứ hai.
+
+---
+
+## Pattern mới từ ECC Upstream v2.2.3+ (2026-11-20)
+
+- **Agent Security Hardening & OWASP 2025 (`agent-security-hardening`, `web-perimeter-owasp-2025-audit`)**: Chặn path traversal trên mọi ID/filename truyền qua tool, kiểm tra ranh giới tin cậy (trust boundary) giữa nội dung ngoài (untrusted) và lệnh hệ thống, quét secret trước khi commit/push.
+- **Production Audit & Introspection Debugging (`production-audit`, `agent-introspection-debugging`)**: Trước khi báo xong, chạy end-to-end smoke check thật trên đúng entrypoint người dùng sẽ gọi, ghi lại nguyên nhân gốc rễ vào lesson log nếu có sự cố.
