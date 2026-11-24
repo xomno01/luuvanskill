@@ -3,6 +3,9 @@ import {
   applyDocumentTheme,
   applyHostStyleVariables,
 } from '@modelcontextprotocol/ext-apps';
+import { createPixelScene } from './pixel-scene.js';
+
+let pixelScene = null;
 
 const state = {
   data: null,
@@ -117,6 +120,10 @@ function renderSummaryHeader(summary) {
     <div class="stacked-seg-cache" style="width:${cachePct}%"></div>
     <div class="stacked-seg-output" style="width:${outPct}%"></div>
   `;
+
+  if (pixelScene) {
+    pixelScene.setStats(summary);
+  }
 }
 
 function buildStackedBarChart(items, labelKey, chartId) {
@@ -931,6 +938,7 @@ function wireStaticEvents() {
   });
 
   document.getElementById('refresh-btn').addEventListener('click', () => {
+    if (pixelScene) pixelScene.celebrate('Meo! Đang làm mới dữ liệu token mới nhất…');
     fetchFullData(true);
   });
 
@@ -982,6 +990,10 @@ app.onhostcontextchanged = (ctx) => {
 
 async function init() {
   wireStaticEvents();
+  pixelScene = createPixelScene(
+    document.getElementById('pixel-stage'),
+    document.getElementById('pixel-speech-text')
+  );
   try {
     await app.connect();
     applyThemeContext(app.getHostContext());

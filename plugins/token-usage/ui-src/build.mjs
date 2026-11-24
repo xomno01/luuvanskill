@@ -56,24 +56,67 @@ async function build() {
       </div>
     </header>
 
+    <section class="pixel-stage-card" aria-label="Sân khấu pixel đồng hành">
+      <canvas class="pixel-canvas" id="pixel-stage" height="104" aria-label="Bé Mèo Pixel thu thập xu token, bấm để tương tác"></canvas>
+      <div class="pixel-speech">
+        <span class="pixel-speech-text" id="pixel-speech-text">Meo meo! Đang canh từng token cho anh nè…</span>
+        <span class="pixel-speech-hint">Bấm vào sân khấu để thả tim &amp; xu</span>
+      </div>
+    </section>
+
     <section class="kpi-strip" aria-label="Tổng quan token">
       <div class="kpi-cell">
-        <span class="kpi-label">Tổng cộng (All-Time)</span>
+        <div class="kpi-head-row">
+          <svg class="pixel-icon" viewBox="0 0 8 8" shape-rendering="crispEdges" aria-hidden="true">
+            <rect x="2" y="1" width="4" height="1" fill="#fbbf24"/>
+            <rect x="1" y="2" width="6" height="4" fill="#fbbf24"/>
+            <rect x="2" y="2" width="1" height="3" fill="#fef08a"/>
+            <rect x="2" y="6" width="4" height="1" fill="#b45309"/>
+          </svg>
+          <span class="kpi-label">Tổng cộng (All-Time)</span>
+        </div>
         <span class="kpi-value" id="kpi-total">0</span>
         <span class="kpi-sub" id="kpi-total-sub">Đang tải…</span>
       </div>
       <div class="kpi-cell">
-        <span class="kpi-label">Hôm nay</span>
+        <div class="kpi-head-row">
+          <svg class="pixel-icon" viewBox="0 0 8 8" shape-rendering="crispEdges" aria-hidden="true">
+            <rect x="3" y="0" width="2" height="1" fill="#f59e0b"/>
+            <rect x="2" y="2" width="4" height="4" fill="#fbbf24"/>
+            <rect x="3" y="3" width="2" height="2" fill="#fef08a"/>
+            <rect x="0" y="3" width="1" height="2" fill="#f59e0b"/>
+            <rect x="7" y="3" width="1" height="2" fill="#f59e0b"/>
+            <rect x="3" y="7" width="2" height="1" fill="#f59e0b"/>
+          </svg>
+          <span class="kpi-label">Hôm nay</span>
+        </div>
         <span class="kpi-value" id="kpi-today">0</span>
         <span class="kpi-sub" id="kpi-today-sub">0 hội thoại</span>
       </div>
       <div class="kpi-cell">
-        <span class="kpi-label">Tháng này</span>
+        <div class="kpi-head-row">
+          <svg class="pixel-icon" viewBox="0 0 8 8" shape-rendering="crispEdges" aria-hidden="true">
+            <rect x="1" y="1" width="6" height="2" fill="#38bdf8"/>
+            <rect x="1" y="3" width="6" height="4" fill="#e2e8f0"/>
+            <rect x="2" y="4" width="1" height="1" fill="#0284c7"/>
+            <rect x="5" y="4" width="1" height="1" fill="#0284c7"/>
+            <rect x="2" y="6" width="4" height="1" fill="#94a3b8"/>
+          </svg>
+          <span class="kpi-label">Tháng này</span>
+        </div>
         <span class="kpi-value" id="kpi-month">0</span>
         <span class="kpi-sub" id="kpi-month-sub">0 hội thoại</span>
       </div>
       <div class="kpi-cell">
-        <span class="kpi-label">Tỉ lệ Cache Hit</span>
+        <div class="kpi-head-row">
+          <svg class="pixel-icon" viewBox="0 0 8 8" shape-rendering="crispEdges" aria-hidden="true">
+            <rect x="3" y="1" width="2" height="1" fill="#6ee7b7"/>
+            <rect x="2" y="2" width="4" height="2" fill="#10b981"/>
+            <rect x="1" y="4" width="6" height="2" fill="#059669"/>
+            <rect x="3" y="6" width="2" height="1" fill="#047857"/>
+          </svg>
+          <span class="kpi-label">Tỉ lệ Cache Hit</span>
+        </div>
         <span class="kpi-value" id="kpi-cache">0%</span>
         <span class="kpi-sub" id="kpi-cache-sub">Cache read trên tổng input</span>
       </div>
